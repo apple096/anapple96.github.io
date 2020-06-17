@@ -1,0 +1,4274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Offhands | Bit Heroes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+</head>
+<body class="offhands">
+<span id="backToTop"></span>
+<header class="fixed-top">
+<nav>
+<ul class="row">
+<li class="col-md-2"><a href="http://bit-heroes.wikia.com/wiki/Bit_Heroes_Wiki"><img src="/logo.png" alt=""></a></li>
+<li class="col-md-2"><a href="/"><img src="/familiar.png" alt="" width="40"> Familiars</a></li>
+<li class="col-md-2"><a href="/fusions"><img src="/familiar.png" alt="" width="40"> Fusions</a></li>
+<li class="col-md-2 active"><a href="/equipments/mainhands"><img src="/equipment.png" alt="" width="40"> Equipments</a></li>
+<li class="col-md-2"><a href="/mounts"><img src="/social.png" alt="" width="40"> Mounts</a></li>
+</ul>
+</nav>
+<a href="https://github.com/NerOcrO/bit-heroes">
+<img src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" title="Fork me on GitHub" width="100" class="github">
+</a>
+</header>
+<main>
+<form class="form-row">
+<div class="form-group col-md-1">
+<label for="selectType">Type</label>
+<select id="selectType" name="selectType" class="form-control">
+<option value="all">--All--</option>
+
+<option value="common">Common</option>
+
+<option value="rare">Rare</option>
+
+<option value="epic">Epic</option>
+
+<option value="legendary">Legendary</option>
+
+<option value="ancient">Ancient</option>
+
+</select>
+</div>
+
+
+
+
+
+and
+<div class="form-group col-md-2">
+<label for="selectTier">Tier</label>
+<select id="selectTier" name="selectTier" class="form-control">
+<option value="all">--All--</option>
+
+<option value="1">1</option>
+
+<option value="2">2</option>
+
+<option value="3">3</option>
+
+<option value="4">4</option>
+
+<option value="5">5</option>
+
+<option value="6">6</option>
+
+<option value="7">7</option>
+
+<option value="8">8</option>
+
+<option value="9">9</option>
+
+<option value="10">10</option>
+
+<option value="10">10</option>
+
+</select>
+</div>
+
+
+and
+<div class="form-group col-md-2">
+<label for="selectZone">Zone</label>
+<select id="selectZone" name="selectZone" class="form-control">
+<option value="all">--All--</option>
+
+<option value="Z1">Z1</option>
+
+<option value="Z2">Z2</option>
+
+<option value="Z3">Z3</option>
+
+<option value="Z4">Z4</option>
+
+<option value="Z5">Z5</option>
+
+<option value="Z6">Z6</option>
+
+<option value="Z7">Z7</option>
+
+<option value="Z8">Z8</option>
+
+<option value="Z9">Z9</option>
+
+<option value="Z1 Shop">Z1 Shop</option>
+
+<option value="Z2 Shop">Z2 Shop</option>
+
+<option value="Z3 Shop">Z3 Shop</option>
+
+<option value="Z4 Shop">Z4 Shop</option>
+
+<option value="Z5 Shop">Z5 Shop</option>
+
+<option value="Z6 Shop">Z6 Shop</option>
+
+<option value="Z7 Shop">Z7 Shop</option>
+
+<option value="Z8 Shop">Z8 Shop</option>
+
+<option value="Z9 Shop">Z9 Shop</option>
+
+<option value="Booster Pack">Booster Pack</option>
+
+<option value="T3 World Boss">T3 World Boss</option>
+
+<option value="T4 World Boss">T4 World Boss</option>
+
+<option value="T5 World Boss">T5 World Boss</option>
+
+<option value="T6 World Boss">T6 World Boss</option>
+
+<option value="T7 World Boss">T7 World Boss</option>
+
+<option value="T8 World Boss">T8 World Boss</option>
+
+<option value="T9 World Boss">T9 World Boss</option>
+
+<option value="T10 World Boss">T10 World Boss</option>
+
+<option value="T4 Orlag Clan World Boss">T4 Orlag Clan World Boss</option>
+
+<option value="T5 Orlag Clan World Boss">T5 Orlag Clan World Boss</option>
+
+<option value="T6 Orlag Clan World Boss">T6 Orlag Clan World Boss</option>
+
+<option value="T7 Orlag Clan World Boss">T7 Orlag Clan World Boss</option>
+
+<option value="T10 Melvin Factory World Boss">T10 Melvin Factory World Boss</option>
+
+<option value="T4 Trials &amp; Gauntlet">T4 Trials &amp; Gauntlet</option>
+
+<option value="T5 Trials &amp; Gauntlet">T5 Trials &amp; Gauntlet</option>
+
+<option value="T6 Trials &amp; Gauntlet">T6 Trials &amp; Gauntlet</option>
+
+<option value="T7 Trials &amp; Gauntlet">T7 Trials &amp; Gauntlet</option>
+
+<option value="T8 Trials &amp; Gauntlet">T8 Trials &amp; Gauntlet</option>
+
+<option value="T10 Trials &amp; Gauntlet">T10 Trials &amp; Gauntlet</option>
+
+<option value="Trials reward - &#39;Magi&#39;">Trials reward - &#39;Magi&#39;</option>
+
+<option value="R1">R1</option>
+
+<option value="R2">R2</option>
+
+<option value="R3">R3</option>
+
+<option value="R4">R4</option>
+
+<option value="R5">R5</option>
+
+<option value="R6">R6</option>
+
+<option value="R7">R7</option>
+
+<option value="T10">T10</option>
+
+</select>
+</div>
+
+
+<input type="hidden" name="_csrf" value="jqUjr5xu-pVeUhqD1I2PdVbtsDaxCvFN2-v4">
+<input type="submit" value="Submit" class="btn submit">
+<input type="reset" value="Reset" class="btn reset">
+</form>
+<nav>
+<ul class="row equipments">
+<li class="col-md-1"><a href="mainhands">Mainhands</a></li>
+<li class="col-md-1 active"><a href="offhands">Offhands</a></li>
+<li class="col-md-1"><a href="heads">Heads</a></li>
+<li class="col-md-1"><a href="bodies">Bodies</a></li>
+<li class="col-md-1"><a href="necklaces">Necklaces</a></li>
+<li class="col-md-1"><a href="rings">Rings</a></li>
+</ul>
+</nav>
+<p>Upgrades shown focus on power.</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th id="count" title="149">149</th>
+<th id="type" class="asc focus">Type</th>
+<th id="name" class="asc">Name</th>
+<th id="power" class="number"><img src="/power.png" alt="" title="Power"><span class="invisible">Power</span></th>
+<th id="stamina" class="number"><img src="/stamina.png" alt="" title="Stamina"><span class="invisible">Stamina</spna></th>
+<th id="agility" class="number"><img src="/agility.png" alt="" title="Agility"><span class="invisible">Agility</spna></th>
+<th id="baseStats" class="asc number">Base&nbsp;stats</th>
+<th id="upgrade1" class="asc number">Upgrade&nbsp;1</th>
+<th id="upgrade2" class="asc number">Upgrade&nbsp;2</th>
+<th id="upgrade3" class="asc number">Upgrade&nbsp;3</th>
+<th id="upgrade4" class="asc number">Upgrade&nbsp;4</th>
+<th id="maxedStats" class="asc number">Maxed&nbsp;stats</th>
+
+<th id="tier" class="asc number">Tier</th>
+<th id="zone" class="asc">Zone</th>
+</tr>
+</thead>
+<tbody>
+
+<tr id="BrokenShield"
+class="common"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAAhndWc15MPjAjV0U1dWVDYFIzsWU16gAAAAF0Uk5TAEDm2GYAAABLSURBVAjXY2DAAtgS2BIgrLTQNAiLTTU0ASLjYhoGZCSmpbiYigEZqUouEJHUICiDIUjF2TQNxEhVNIboSoUKMKSlpcFMTsNmMwMAaD4P8Ls9i3EAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Broken Shield</td>
+<td class="center">4(+1)</td>
+<td class="center">2(+1)</td>
+<td class="center">2(+1)</td>
+<td class="center">8</td>
+
+<td class="center">11</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">11</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1</span></td>
+</tr>
+
+<tr id="Heater"
+class="common"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAl5eatbW7Wnd+T0A6STozXYiTMSgkTW11VHiCLu22tAAAAAF0Uk5TAEDm2GYAAABLSURBVAjXY2DABOzl5aUhIEaF5czJZg4gRubMtJkBYIZQWqYDjAEW6RRKawYx2DtnzmwBa++YOa0VbFBFR0cAxMSOVqjZpQEMeAEA2DQVdfPSbpQAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Heater</td>
+<td class="center">2(+1)</td>
+<td class="center">4(+1)</td>
+<td class="center">2(+1)</td>
+<td class="center">8</td>
+
+<td class="center">11</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">11</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1</span></td>
+</tr>
+
+<tr id="WoodElfShield"
+class="common"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAANDMkZGlNPD4sTVE6NDonTzgmPSoco3pTVAAAAAF0Uk5TAEDm2GYAAABBSURBVAjXY2DAB9LS0gpANFuSc6A4mJGmbAphuCebhoMZTmVQESf3VCjDtQzKUA4vBzHYi5wDwQyG8vLyArw2AgBtfgyOKyqyNAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Wood Elf Shield</td>
+<td class="center">2(+1)</td>
+<td class="center">2(+1)</td>
+<td class="center">4(+1)</td>
+<td class="center">8</td>
+
+<td class="center">11</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">11</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1</span></td>
+</tr>
+
+<tr id="MysticOrb"
+class="common"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAA7b3JkRlYsyhB////5GmJbzhGTykMwAAAAAF0Uk5TAEDm2GYAAAAiSURBVAjXY2AgEbAlQBkpYVABR1OIEFtwElQuVQ1dMdEAACL7BAmBZoi0AAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Mystic Orb</td>
+<td class="center">5(+2)</td>
+<td class="center">2(+1)</td>
+<td class="center">3(+0)</td>
+<td class="center">10</td>
+
+<td class="center">13</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">13</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2</span></td>
+</tr>
+
+<tr id="KiteShield"
+class="common"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAOa/OT0A6KIKaSTozLopZOp5pHmE9MSgkKHtO0YxfgQAAAAF0Uk5TAEDm2GYAAABMSURBVAjXY2DABBwdHS1OIEZnWObM6QogRlpq5HQHMEM4EiKSKGwJlRKGSoUZR5aDGBzTQmcWMUAZJWATO2eClQCFykuglrQ4MGADAAcnFvz0Vb0oAAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Kite Shield</td>
+<td class="center">3(+0)</td>
+<td class="center">5(+2)</td>
+<td class="center">2(+1)</td>
+<td class="center">10</td>
+
+<td class="center">13</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">13</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2</span></td>
+</tr>
+
+<tr id="Crestguard"
+class="common"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAAkycW3rE5Rll2x50sRWaXTHGo5rg7nnlNPQAAAAF0Uk5TAEDm2GYAAABLSURBVAjXY2DABsoLILSLWTqE5VpW5gAWMA1MSwEJOZs6qqWBGaVJaWUQRlpaKUQqLC0UxGAxDg0NB2t3Li2FmMNiHA61wsUBq80ATMASElYeZSgAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Crestguard</td>
+<td class="center">2(+1)</td>
+<td class="center">3(+0)</td>
+<td class="center">5(+2)</td>
+<td class="center">10</td>
+
+<td class="center">13</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">13</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2</span></td>
+</tr>
+
+<tr id="LightningSword"
+class="common"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAM6KQOjg4gomASEZGLy0tZ97PUMm2zNbKtb+zmqGYWl5ZJqZChAAAAAF0Uk5TAEDm2GYAAABVSURBVAjXY2AAA+7dEJphZzdUoGw1VKBLACIwAyqwPX0DkNzAwAgR2MCwvQskwGDNPQ2iYtfOrA1QLdUQLSwQFQwMTtHWEAFVhs1gG2cHQO2FGs4AAIbFFrCjti5VAAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Lightning Sword</td>
+<td class="center">6(+3)</td>
+<td class="center">4(+1)</td>
+<td class="center">4(+1)</td>
+<td class="center">14</td>
+
+<td class="center">19</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">19</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3</span></td>
+</tr>
+
+<tr id="Bomb"
+class="common"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADNQTFRFGhseGRsdFhcZGRodGRodFRcZFxkbFRYZGhweBQUGAAAAXmRsREhO0tDEKSsuMjU5HR8inCcujgAAAAt0Uk5T7u6RiImRkJHtBgB4bvTtAAAARElEQVQY02PgQgMMxArw8qKrwBDgF0AR4GQXEGDnRBJgE+DnE2BGEuDg5uHn40AW4OFHFQBrYUE2lImBkZWTNKfjEQAAa4MKIPuz33UAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Bomb</td>
+<td class="center">4(+1)</td>
+<td class="center">6(+3)</td>
+<td class="center">4(+1)</td>
+<td class="center">14</td>
+
+<td class="center">19</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">19</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3</span></td>
+</tr>
+
+<tr id="VoodooDoll"
+class="common"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAAIiUtwKyT/+jL/+PD7Myl8NOxtp+Dm8eMTwAAAAF0Uk5TAEDm2GYAAABCSURBVAjXY2DABpjNoAxjswQIQzFNAEyzqKUlgxnuQQoKCiAGewFUrWsolAEXKSl1gDBYGQIgDBaGEAijoIAdq80ALD4HywzdJZ0AAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Voodoo Doll</td>
+<td class="center">4(+1)</td>
+<td class="center">4(+1)</td>
+<td class="center">6(+3)</td>
+<td class="center">14</td>
+
+<td class="center">19</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">19</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3</span></td>
+</tr>
+
+<tr id="DreamOrbs"
+class="common"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRF/0WW/0V0AAAA/9KqswCPnQB82tjKYgBN/0WWeSVGOBAfaR47/0V0jkEU3wAAAAN0Uk5TgIAAIMBHFQAAAF9JREFUCNdjUIICBiUFKEOhtQHC0DCpgDBYXcKZICKlFUqKgiA17Q1KMmeEwLoUT+8+CGQoKcmkzVwDYiieTpu56yCYMXM2jJENZijJrN69RgjEUDy1CqILag5ICGgyAMkxI0OBgAUNAAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Dream Orbs</td>
+<td class="center">12(+3)</td>
+<td class="center">4(+2)</td>
+<td class="center">4(+2)</td>
+<td class="center">20</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4</span></td>
+</tr>
+
+<tr id="Bone"
+class="common"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAAtq+XqKGJvregr6eP0su0ysKscGhP8LbGqAAAAAF0Uk5TAEDm2GYAAAA6SURBVAjXY2AgGoRCMWuYAQNrGpDFluLAwJKWZmyW7A4UdnMqL0wrADJK1BnYTUEi7AVgDgSAOEQAAJ5fCXD5uYL1AAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Bone</td>
+<td class="center">4(+2)</td>
+<td class="center">12(+3)</td>
+<td class="center">4(+2)</td>
+<td class="center">20</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4</span></td>
+</tr>
+
+<tr id="Truth"
+class="common"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADxQTFRFAAAAl3Isysi4zcu7oxMZxsS0MG6Rrqyee10luripJxgTWzotvrytQCgfNHmbJVd7P5S0wRYdZw4RhxEVnE6dDwAAAAF0Uk5TAEDm2GYAAABBSURBVBjTlcw3DgAgDAPA0HsL//8rLAiSDW9nSwYgEZ56TM+MX9bMnbu2L4/JjfZ1Kvu/vo5A95gzhFtsS2WCO1581AMGXEcRzgAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Truth</td>
+<td class="center">4(+2)</td>
+<td class="center">4(+2)</td>
+<td class="center">12(+3)</td>
+<td class="center">20</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4</span></td>
+</tr>
+
+<tr id="Corazon"
+class="common"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAdHFrWjIiLBkS4NnMNjMxgQgtiYF5WQYgkwYyx76x0sq9yFhdOQAAAAF0Uk5TAEDm2GYAAABBSURBVAjXY2DAB7h37wZRTk6zt0bv3r2LQdC4axUQFDAwcLYv3759O1BuQgMDwwYgPZOzE6qJrQ3KwCLCyUAAAAAm1hHKIZhnkAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Corazon</td>
+<td class="center">16(+5)</td>
+<td class="center">5(+2)</td>
+<td class="center">5(+2)</td>
+<td class="center">26</td>
+
+<td class="center">35</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">35</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="Urshu&#39;sShamshir"
+class="common"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAAGAIDLycgZkkRRS4OkYMxuLFzDCl7+QAAAAF0Uk5TAEDm2GYAAABLSURBVAjXY2AAATYDBghgc4AxXGCMYCiDIRkml0qYwRYKYbClBjswBDCkpaWGmjAwhLGFhoYaO4CEjY2NgQIMyqkMLC4gpYrGEA0An+cMpGaK+woAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Urshu&#39;s Shamshir</td>
+<td class="center">5(+2)</td>
+<td class="center">16(+5)</td>
+<td class="center">5(+2)</td>
+<td class="center">26</td>
+
+<td class="center">35</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">35</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="RoyalCarryall"
+class="common"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACFQTFRFAAAA89+MUkYWbyxhUj0nXSJRXkYts5k1MDA1KR8UPy8ejiNaRQAAAAF0Uk5TAEDm2GYAAABESURBVAjXY2AAglULGMCAkwHKmIBgcBFicJoGR4IZXR0dnWBGlanpcjBDc7rmIjBjlmNZFoThDmMscVsF0T4LZjsYAADKvxNGxFBJOQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Royal Carryall</td>
+<td class="center">5(+2)</td>
+<td class="center">5(+2)</td>
+<td class="center">16(+5)</td>
+<td class="center">26</td>
+
+<td class="center">35</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">35</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="ConquestBuckler"
+class="common"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAA2djHtbOOa2tIWFY+Kykgh4RYOzcrWl2z/AAAAAF0Uk5TAEDm2GYAAABpSURBVAjXY2BAAPbyUghdbGweCmIUmyWZlAeAGIlqye5ABrubkFKaCVAVu5lSGZhRkqQunmQMlCsxK1QqBiliN1dLUy8BqSlKL09SBRlUVuJSlg4yp8QtDWIge4mLO9gKBtbQUCQnMAAA9/UZEr/nXLYAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Conquest Buckler</td>
+<td class="center">22(+10)</td>
+<td class="center">7(+1)</td>
+<td class="center">7(+1)</td>
+<td class="center">36</td>
+
+<td class="center">48</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">48</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6</span></td>
+</tr>
+
+<tr id="VictoryHeater"
+class="common"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADNQTFRFAAAA////zv388v37/+3I8tOSVTIn4Lxvqv79YzomzKhZJY+RuJNDYv//OuDkL7S3NR4TRkVebgAAAAF0Uk5TAEDm2GYAAABYSURBVBjThc/RCoAwCAVQa1Nn5fT/vzajxkZBu096kAsCADhJhMjhjm+MS87IhzewWrTaPkJ6w6o6gU/HvDT9doBzgBq3PcCuiw5AWNSQoEfit3EPEXmmExaPBu2Y2sw1AAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Victory Heater</td>
+<td class="center">7(+1)</td>
+<td class="center">22(+10)</td>
+<td class="center">7(+1)</td>
+<td class="center">36</td>
+
+<td class="center">48</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">48</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6</span></td>
+</tr>
+
+<tr id="BalancedNock"
+class="common"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACFQTFRFAAAALyIVZGt4SU5XgYiYlrAYfpQUwbysVWULZ3kRNFN3oEpoVAAAAAF0Uk5TAEDm2GYAAAAjSURBVAjXY2AgDbBXFUIYzE6roEJLQidAGJxpUAZHBwO5AACBRAT6qI1DogAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Balanced Nock</td>
+<td class="center">7(+1)</td>
+<td class="center">7(+1)</td>
+<td class="center">22(+10)</td>
+<td class="center">36</td>
+
+<td class="center">48</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">48</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6</span></td>
+</tr>
+
+<tr id="HighlandDefense"
+class="common"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4wcDFTY2oNrVBQAAAAFvck5UAc+id5oAAAZTSURBVEjHjZVZbJx3FcV//2/2xbMv9ozXxEvsJE0TkpQ0cUybxE0bqRKoQrQsQilIqRASUlEfygOVAAn6whtKBSoKlVohlZagylSRobhJk2YzcbPYiT1xYs9ij+35Zt++jRcIRLEs7uOR7j06dzuC/zMufvQb3C0eorF2hBAP8GDvyIZ5Yj3w/T/9mYaiUGzo7A6voUp+RDPb6fb4vxKNtYdMQj+FMB8EMQncNzYgMq8H9rsWEUJwN+dFQj8qBM8H+o/GYxHXXqvV6q8q3r0rmbk9Lkm+6bTqSQPO5uYm3luP6BEF1cVzfHb2nNXj9b+YLnt9Po/jmUap8Gw2nScSCWAYOpWKhizL9G3twhvwYLOIz2Mh65tmSZy2WCTdFtu/voIrYydxtO8X/UOlJxcWl36WTS52LBkOqsU0Fz55F10ViKYbt8OOxWImk9mP0+unuzv8ZdvOzb/wuMzJ1179yeXLYyfZ89yJRwlUTTHf+Mc73XZP9JfzS1r7ufG/kFtM4Nnkxv2MB4sSxpnfylBnDIsJJsfHKabusdK/DU366sDeHbGf//jVV76nqs00oD3UosmP38Jqs3eruvjg5nx96+nfv2U1+mTsnRasLuhs28WA/Xl628PYrRaq5Qpz07cp5gskbt0gncxw5BvfrLsl+Yqua18bHX1qxdcz/JACi6PFFxKStSN9/pI1X8gSDZrxdztxuiU641F6pAE6OhwICQprBfoGB1nKLLGQmKVclJk4d8U+fWe649DwruDoKDKg/i/BvuRi6uTkbMl3deKvePZZcHRYCfE4AVMYk0lFCIEhQCBIZcu4rBbaYq3sPjCMZDYzfWuGkYMjbcdfHHkXwzgOXDMDzE+dQc7cdQNbcoWaKBdkQu0S4U0OXO4shjVPrR4lkb7HnTtlhp/cTns8iNks0BoNyuUKTpcbvVHD5/Nai/LqoN4o2G/8/XeYAH70yreGcyXl+KXJ2W2z1yaFFljFO2Am1GnH6q9haCYC1QN4rT0UixWS6RTRiI9AwIumaigNBVVRyefWyKaSVDVhCHTF22L7579bJJ7SMb107c4y1YZCpH83nY4Y8WYEd92OUrLjrPcRiPiplIt88ullHE4/Gj7ktSpLS2XWFCtSsAN5PsHVmSXD4bTlOqJu5T8zuLQql84YcEQSJtEf3MVAZIiIN4okJFYVGblaIZ1KspBcoFSqwP1PsTsnaamXaeTWULJrrNRKpLAghCAcbWPL9p0Ptujj81dvu8Iey6HE7ZTJrsh0tjkJtdpp1Bs0KhrZtSrJtMz9+QQh9R49xev0looYkqBhMliWDFaLFpRcnNjQgLmj1X9Q1/V3JICeHaN8/fCgduzpx6TI9r2Mj42xtrwMQmBzOglH/LTYYW0lg5q9yYktU2wbtGNYnNRXYDUDVxcMxu8F6PjSMM+NDCk2qm8AiQdrurl3cy6Tzc+EAom+isNlXkjME22PU9PMlIpVOrq78VtqdIffpjXWoBl7mcrMOKvJL7i9LJhKS9g9QYIBT7Mt3n4r4HPLgP6AwO5wXTCUzHeODQ+MTdgd4ff/cArD0Nl3+DCtfa0USgaaSxDrUjAJjeaNt1lerDGbhc/uaNzMt3HwhWfZ/3gspTVrLzmckTlb2xP/vWRNVZRINJL3BYLqlWmZeq2O0mhSLpRQGnWSK2WSX1yn36ZiQScrF7mV0ZFrOqoGqi7R4vXRvalHNUkiryqK+tCz83QfID9/bkmY1B8+sav3V1rtu5sT07PMXL5CV38/gcEd3E+myXhUrJLB7IrBxTk7mVwTZ3yApw8dozNim7Jaba+bzaa8t2f40W9qGHo53Of7EETM5vD+9Oy4FtTrTVp8LUz97QyrKynOxPvRV5OsFhSM+AECXV7iXa3s3Nmf9tlqvw71HRiT757f2HBUTbdomvHC9Znk69G2+DaX082NyWmExQaeEKXUEjazRrQ9QKNZQ62XPvfY6m9Kwjhtkgz9sdEfbOzJa3MT+AIhJi9MfN8fDO5s7dmG2dU6VCvnRpzOFqWu+z+wSeU9annxZvreTLKQz50F6T3ggdFs6MnB3hEuj53EQPzWQMLQ4eKZU0cdTrcRjbXLkmS8BqZvAx8ZBlOGIdh77MR6pdZXsF788dQbZpvNZvEGgkiS1BCGMAPqwSMv6xvl/Qux68VKTb7F1QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNy0wM1QyMTo1NDo1NCswMDowME8PGdEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDctMDNUMjE6NTQ6NTQrMDA6MDA+UqFtAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADgwJQ5AEwAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA3OSPlJPUAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU2MjE5MDg5NHSCxDQAAAAOdEVYdFRodW1iOjpTaXplADBCyW8Y7QAAADV0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL3RtcC90aHVtYmxyL2ltZzI5MjE1NDcxMzI3ODYwMDM2MTllSRlAAAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Highland Defense</td>
+<td class="center">6(+2)</td>
+<td class="center">36(+12)</td>
+<td class="center">6(+2)</td>
+<td class="center">48</td>
+
+<td class="center">64</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">64</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7</span></td>
+</tr>
+
+<tr id="BalancedIntent"
+class="common"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAMAAADto6y6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA1VBMVEUAAAAft/QQkMIJfKkgt/QJfasXodgJfaoWn9YIe6kft/Qft/Qft/Qft/Qft/Qft/Qft/Qft/Qft/Qft/Qft/QguPUXse8Qj8EdtvMctfIIi78JeqcguPUctfIHpuYaregAXoMft/Qft/QWse8Xodgft/Qft/QFpeQXotkJfKoJfaoft/Qft/Qft/QNq+oGndkPj8IPjL4JfasJfasft/Qft/Qft/QIe6kIe6kIe6kMqegPmM8Ur+0GpeUNq+odtvQTr+0Oq+oRp+MXoNgNqukctvP///+U0ru5AAAAOnRSTlMAAAAAAAAAAAAAaFYIFreQT9v4jBSXzIs85ux4lO78ZQkGUshUEtP9/v1UZLJgTGLuwU4aTIUYD3lXbqGquwAAAAFiS0dERhe6+e0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfjBwMVNjag2tUFAAAAAW9yTlQBz6J3mgAAAG1JREFUKM9jYBg8gJGLmxGbMA8vHz+mBCMjo4CgkDAWCRFRMStrcSZMcQlJG1spaWZ0CRYZWTk7e3kFVjT1ikrKDo5Ozips6Barqrmou2poarGjSWjr6OrpGxgaGaObZGJqxmFuYck50CFMLgAAwPkJl/mjkRsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDctMDNUMjE6NTQ6NTQrMDA6MDBPDxnRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA3LTAzVDIxOjU0OjU0KzAwOjAwPlKhbQAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAA1Mwmpb+QAAAAWdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgANThm1HbhAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE1NjIxOTA4OTR0gsQ0AAAADnRFWHRUaHVtYjo6U2l6ZQAwQslvGO0AAAA2dEVYdFRodW1iOjpVUkkAZmlsZTovLy90bXAvdGh1bWJsci9pbWcxNTE5NjcxMzkxNjg4OTI0MTQ0MdvnQ6IAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Balanced Intent</td>
+<td class="center">20(+6)</td>
+<td class="center">8(+4)</td>
+<td class="center">20(+6)</td>
+<td class="center">48</td>
+
+<td class="center">64</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">64</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7</span></td>
+</tr>
+
+<tr id="GauntletoftheMaiden"
+class="common"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACxFBMVEUAAAAqMTRCS1BBSk8oLzJCS085QUWnu8hDTFFmc3stNDgWGRtqCQAZHR9oBQA9CQGPaWw1Fw6st8NLT1NxGhNAMzCOaGs0DAJGBQBIBABHBABUBQBVBQAqMTQtNDc/SE1CS1BCS1AqMTQsNDc/SExCS09BSk9BSk9BSk8oLzIoLzIpMDNMVVtBSk9CS085QUU5QUZFTlNETVJCSk+nu8iqvstbZmxGT1VCTFFmc3todH0sNDcWGRsVGRsiIyUsGRh6BQBqCQAZHR8OIiVACwh3DgJoBQBoBQA8CACPa26PaWw0FQyuusast8NKTlJwGhRxGhM/MS+Pam2OaGszCwCxucSPZWZfAABFBQCQJhdvDQNpCABIBABqCQBHBAB6DgBsCgBqCQBsCgBrCQBqCQBHBABLBABYBgBqCgBqCQBqCQBHBABHBABOBABUBQBUBQBUBQBIBABIBABOBABVBQBVBQAuNjlNVlxRW2FQWmAxOTwwNzpaZWxmcXlpdX1ibXRTXWNpdn4uNThaZGuIl6KmucZqdn5fanFIUlgsMzZBSk9aZ21qeIBASU5CTFEvNzsuLC8wLC0wKywvKSkkGxwqIyQxKywmHR1ICQVfCwNsDQJ0DgFzDQB1EAN4EwWDFQVCDwhpPTuNYWKofH2cb299PzdiEwN6HgqGRj07IhtrdHukusbR7f250uKAfH5PKh1pKBSNcW1PVFlueYCjtsPQ6fu2zNuuwc6mp6+QKRl+FwpFOzptdn2juMXQ6/24z96XnqZ6aGZ8KRaGRDw7Fw9qZmqepK7H0eCyusZ5ZGJJFQVoJhGQcm1KBwJmFA16HxWIJxuFJBh+GQx6EQGKFgSQIA9MBABmCAB5DACIEQCHEQCJEgGQFQKMEwGEEABtCgBMBQB8DwGPFQKOFAKPFAKFEQF2DQCCEAB3DQBhCABqCgAuTAhI1dBiAAAAdnRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4cHBwOcujj4+Pocg5vwMBvDhzj5jUMHOP863Ec438ZyvOOFAMDFI7zyhmA4xyA4xyA4xyA4xyA5jUMgPzrcYB/gPzrceY1DD+Q8cBvDhnK5ePocgMZHBwODGKCLAAAAAFiS0dE67/dJrgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfjBRcUFCUnrytkAAAAAW9yTlQBz6J3mgAAAT1JREFUKM9jYCATMMrKySsoKCgyYUgoKauoqqlrMKMKs2hqaZeVV1RW6OjqsSJLsOkbVFXX1NbVNxgaGSObxm5i2tjU3NLa1m5mbsGBJMFpadXR2dXd09Xb12/NhSTBbWNrN2HipMlTpk6bbu/gyAOX4HVydpkxc9bsOXPnzXd1c+dD0sPvsWDhosVLli5bvsLTSwBJQtB75arVa9auW79ho4+vEJKEsN+mzVu2btu+Y+cu/wARJAnRwN179u7bf+DgocNBwWJIEuIhR44eO37i5KnTZ0LDwhHOYpCIOHvu/IWLly5fuRoZFY0kIRlz7fqNm7du3r5z9979WGSJuAfXHz56/Pjxk6fxCYloEs+eg8CLpOQUZInUtPSXr0AgIzMLSZyBQSo7JzcPCPILpFHjSrKwqLgEBEplyE0eAOjjfUKuLZobAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA1LTIzVDIwOjIwOjM3KzAwOjAw5UbwgQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wNS0yM1QyMDoyMDozNyswMDowMJQbSD0AAAAgdEVYdHNvZnR3YXJlAGh0dHBzOi8vaW1hZ2VtYWdpY2sub3JnvM8dnQAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABd0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQANDiHYIctAAAAFnRFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADQ4f89HoAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTU4NjQyODM3cgcZKwAAAA50RVh0VGh1bWI6OlNpemUAMELJbxjtAAAANXRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vdG1wL3RodW1ibHIvaW1nOTk0NTYzNjc0MzA5NTIwNzQ5MjtfffoAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Gauntlet of the Maiden</td>
+<td class="center">8(+3)</td>
+<td class="center">48(+15)</td>
+<td class="center">8(+3)</td>
+<td class="center">64</td>
+
+<td class="center">85</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">85</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8</span></td>
+</tr>
+
+<tr id="Quiverance"
+class="common"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABI1BMVEUAAADR2eillD2kkzrl6vSnrby8w9KmrLvR2ejR2ejR2ejR2ejR2ejS2+yon3OIbgXGskvn1WHz4meunUKkkzzR2ejR2ejS2umHbQTFsUro1mKkkzzR2ejN1eXh5/J/ZACWewz76WejkTnl6vTl6vTl6vSXjmTV19ru7Mm0s6Cmrb6nrbzl6vTl6vTk6fO9xNSmrLunrbzl6vTp7vfV3OrO1eSdorGnrbzR2ejR2ejS2um8w9KqscC7wdCmrLumrLumrLumrLumrLumrLunrbzT2+nT2+2on3Pz4meunULj6PPh5vLU3e7z4mSunD/l6vTU3OyysaLr5azBvJXU2+q8w9OttMTc4u3j6fTh5/TU3e3S2um8w9KrscDP1+XU3OouTAi9bhK7AAAARXRSTlMAAAAAAAAAAA5zgX+AgH+AgYB/gkAZzvX96vN/AxSO5iyJfz+Q8fGJvcFxDhnK8/XOGQMUjo4UA0CCf3+N8RnK5ePochxlfAzMAAAAAWJLR0Rgxbd8EAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+MFHA4pJPzw8usAAAABb3JOVAHPoneaAAAAl0lEQVQoz2NgGLmAkYOTi5uHh4eXj19AUEhYhAkuISom7goEbu4SklIentIICRlZOS8vL28fd3kFRV8/JWaEYSzKKqr+XgGBauoaQcGaWtqsCBkdXT3vkNCw8IjIKH0DQyQJI2MT1+iY2Lj4kGhTM3NWZKdZWFpZ29jGxMRYs2G4m93O3sHRyZkdQ4LV3NDFxUWblWHgAQAuWReuaXEtCAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNS0yOFQxNDo0MTozNiswMDowMKJFPrgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDUtMjhUMTQ6NDE6MzYrMDA6MDDTGIYEAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADQ4h2CHLQAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA0OH/PR6AAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU1OTA1NDQ5Np7QppYAAAAOdEVYdFRodW1iOjpTaXplADBCyW8Y7QAAADZ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL3RtcC90aHVtYmxyL2ltZzEzODQ3MTMwODU5MzYyMTcxMDIxo3ilHwAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Quiverance</td>
+<td class="center">27(+8)</td>
+<td class="center">10(+5)</td>
+<td class="center">27(+8)</td>
+<td class="center">64</td>
+
+<td class="center">85</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">85</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8</span></td>
+</tr>
+
+<tr id="FirstRule"
+class="common"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9">
+<td><img src="/question.png" alt=""></td>
+<td>Common</td>
+<td>First Rule</td>
+<td class="center">11(+3)</td>
+<td class="center">62(+22)</td>
+<td class="center">11(+3)</td>
+<td class="center">84</td>
+
+<td class="center">112</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">112</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9</span></td>
+</tr>
+
+<tr id="Galvanizer"
+class="common"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9">
+<td><img src="/question.png" alt=""></td>
+<td>Common</td>
+<td>Galvanizer</td>
+<td class="center">35(+11)</td>
+<td class="center">14(+6)</td>
+<td class="center">35(+11)</td>
+<td class="center">84</td>
+
+<td class="center">112</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">112</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9</span></td>
+</tr>
+
+<tr id="Defender"
+class="rare"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAa3B2P0JEWVxfpoo8xKFDm0M4u5c1YC8pjD40eTQroIQ39heKLwAAAAF0Uk5TAEDm2GYAAABZSURBVAjXY2DAAkJ3794NollXzpy5YgOQwb4sfeZqEIN1W/bMHQ4gkaXps1eAGcuELcEM1mVGmhCR1dkQKYao9Fk7QLoYqlav6AabzN3RsQFiR/VubDYzAACRPByfYAPm8QAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Defender</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">3(+1,+1)</td>
+<td class="center">3(+1,+1)</td>
+<td class="center">12</td>
+
+<td class="center">16</td>
+
+<td class="center">20</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">20</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1</span></td>
+</tr>
+
+<tr id="Honor&#39;sEnd"
+class="rare"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAsKOL3c2ux7eZ//LRRFZxi4BoTGB+q5x/SEE0JCIN/gAAAAF0Uk5TAEDm2GYAAABMSURBVAjXY2CAA84JDAwzQYzJmjNnKgM5DNOay4PbwIwmF2cooyQQjdFcAlHDCRTpZEBmMEwuCZwAZkwsCYYwOMsjGVAZDDMnMCABAAt0HLurfZzqAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Honor&#39;s End</td>
+<td class="center">3(+1,+1)</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">3(+1,+1)</td>
+<td class="center">12</td>
+
+<td class="center">16</td>
+
+<td class="center">20</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">20</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1</span></td>
+</tr>
+
+<tr id="Shuriken"
+class="rare"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAALS4xX2Nocnd9GxsdNzg8JCUnp7q/GAAAAAF0Uk5TAEDm2GYAAABCSURBVAjXY2DAAphhDFYFGCMVymBMcxENBjFY0tLSwLIsCWwQybAENgcQzQSUATNMA13SBKD6wgKgDCYYg8EAm9UATuUIo+FTj8sAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Shuriken</td>
+<td class="center">3(+1,+1)</td>
+<td class="center">3(+1,+1)</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">12</td>
+
+<td class="center">16</td>
+
+<td class="center">20</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">20</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1</span></td>
+</tr>
+
+<tr id="DarkMatter"
+class="rare"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAFFQTFRFIQAAIQAAIgAAHgAABAQEHgAAAAAABAQEBAQEHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//rmNwAANAAANQAAeQAAKwAAagAAbAAALgAAIC6QBQAAABJ0Uk5T/P386pTrLZWW6l8qPwxbNhoAzp6JIQAAAGRJREFUGNOVz0kOgCAMBVBEmYfiwNT7H1QXBIxutMuXn/6WrI8hX8EZbtwNAnjtIXQIVsxkFjY0cLAcpexZQAPjVd1SReUbcE1rSgWpHolYahyJa0dGxCxhtEg2Mdlb3nf8e+4EimcQHn4DGdUAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Dark Matter</td>
+<td class="center">8(+3,+4)</td>
+<td class="center">4(+1,+1)</td>
+<td class="center">4(+1,+1)</td>
+<td class="center">16</td>
+
+<td class="center">21</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2</span></td>
+</tr>
+
+<tr id="SoldiersWard"
+class="rare"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADZQTFRFAAAA+9qTx6JRqKOb8cVlHqxRraqjGZRGYUgwFXs6H69Tz8vEmpeRRDIgTzolubawIsRdNSgbuowOFAAAAAF0Uk5TAEDm2GYAAABkSURBVBjTjY5JEoAgDARRWRUmmf9/VqCA4uDB5EL3EIgxHxURgYLCxY+2BodBRwF1iNjQgTJFGfkSqMeWyz1vBDlsxSUYYM+KPs1/WefpU55skPVSbqK94oTcli95z7shzd96Ad1nBjI+mwtBAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Soldiers Ward</td>
+<td class="center">4(+1,+1)</td>
+<td class="center">8(+3,+4)</td>
+<td class="center">4(+1,+1)</td>
+<td class="center">16</td>
+
+<td class="center">21</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2</span></td>
+</tr>
+
+<tr id="Huskarl"
+class="rare"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAApKOXwcCyW1hkamh1PCgTSUdRaUknPDtETTQbNCIQWTwfW1ax/QAAAAF0Uk5TAEDm2GYAAABoSURBVAjXY2BgYHYxYwABZq9Vq9JAjKyVE6euSmBgYFs5e/fO0GVAxurd2runrmBg6Jq9vbx6Z1QDQ9fu8o5yEGPl7grndpDcwk0Vbu3aE1cgpOCKOVZCtXMADZwJMpChC2oFwlKoMwCueDQZfFlsOwAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Huskarl</td>
+<td class="center">4(+1,+1)</td>
+<td class="center">4(+1,+1)</td>
+<td class="center">8(+3,+4)</td>
+<td class="center">16</td>
+
+<td class="center">21</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2</span></td>
+</tr>
+
+<tr id="Dawn"
+class="rare"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAJigqQUVIgn92TzUrLC4wPyoin5yRHR4fMSEbMDM1JCUmviDf1wAAAAF0Uk5TAEDm2GYAAABNSURBVAjXY2AgDlSsApELGMwZOhZwMTDsnLl798yZrAsYtpktWuSyujuUYUP67o5Zu7kFGBgyCzZwbeAGqp7JzrB6A0jbBIaqDiLtAQAkwxVvc0AO/wAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Dawn</td>
+<td class="center">10(+5,+6)</td>
+<td class="center">6(+1,+1)</td>
+<td class="center">6(+1,+1)</td>
+<td class="center">22</td>
+
+<td class="center">39</td>
+
+<td class="center">37</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">37</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3</span></td>
+</tr>
+
+<tr id="EternalGuardian"
+class="rare"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACpQTFRFAAAA/8srPEFDpp2USlBTua+lWWBjycC48tEaQ0hLMzY5wmMA4nMA9owPf2zCTQAAAAF0Uk5TAEDm2GYAAACJSURBVAjXFY0xCgIxFETHWgOeZRsrO4+y7A3EK2yx24gWEbyAUbBODKR28+E3Vvm5iz9TDDMwzMMKqAC2MDATAwzDkpsjJxaGZMgHhcxC2ARaooSk9aESwtpfht66N4q/no7WEUy8j7OVBNB+nDvR8++u/rpXC7o5PzXEw9DfiqJ9+3FV6UEF/gMHY0JvLihgDwAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Eternal Guardian</td>
+<td class="center">6(+1,+1)</td>
+<td class="center">10(+5,+6)</td>
+<td class="center">6(+1,+1)</td>
+<td class="center">22</td>
+
+<td class="center">39</td>
+
+<td class="center">37</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">37</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3</span></td>
+</tr>
+
+<tr id="BoneWarden"
+class="rare"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAAoTM2zrWWtKCGXRsdfXBdSkE3JY4TXQAAAAF0Uk5TAEDm2GYAAABFSURBVAjXY2BgSwOCBAYGhtRgJePQMCADLgIUg1DEqGFISxF0AysOVhF0BYulpbmkQeRYXRhgiqCMJDMogzkMymAD6QEApHkTJ0cmd+cAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Bone Warden</td>
+<td class="center">6(+1,+1)</td>
+<td class="center">6(+1,+1)</td>
+<td class="center">10(+5,+6)</td>
+<td class="center">22</td>
+
+<td class="center">39</td>
+
+<td class="center">37</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">37</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3</span></td>
+</tr>
+
+<tr id="Ambush"
+class="rare"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADlQTFRFAAAAaGBZnYp6h3tuZVxRvq2cwLCfkYJzt6uZnkRLVjkisU1VKCgs0su30825NB4WQEFGLzE1ISIklioTfQAAAAF0Uk5TAEDm2GYAAABnSURBVBjTlY5hD4QgCEC9ukpTQd7//7GRm92tD22xMeGNB4bwFO0OaG8B1oGNdray+lupu+6eWBUcfNlUdVNY+XSFLkzulrIs10I5d1KuMyIxwN/dKHC6NkiKCfNgTOSUXYHfL/MoDg39BNZi+RsuAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Ambush</td>
+<td class="center">18(+6,+6)</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">30</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">50</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4</span></td>
+</tr>
+
+<tr id="AcademicBook"
+class="rare"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAVjUQj1cWdkYPby8gUlA+qKWMtW8fZz0OMR0HDvg+CQAAAAF0Uk5TAEDm2GYAAABDSURBVAjXY2BAAjNnQmhOBoYJRDA4URksU6ZMATNmdHR0gBVNtpxpDGZMUhRUAjOml5eXgxnT0tLSwAzW0NBQJCcAAO//EcGKOrQBAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Academic Book</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">18(+6,+6)</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">30</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">50</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4</span></td>
+</tr>
+
+<tr id="DemonGrasp"
+class="rare"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAA9QTFRFAAAAfTJ6Wg1XpjShOAo2j5PS9QAAAAF0Uk5TAEDm2GYAAAAySURBVAjXY2DAA1gMYCwXB5iQigMzhO2s4gKmWBRdIDIuzspQVS4iEBUsDg5QKQZiAQB++wUQZ22c8gAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Demon Grasp</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">18(+6,+6)</td>
+<td class="center">30</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">50</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4</span></td>
+</tr>
+
+<tr id="AncientCudgle"
+class="rare"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAn6UAgokAbHIAu7qnGRoaICEhZWNPXUYwKR0ZM9fa1gAAAAF0Uk5TAEDm2GYAAAAvSURBVAjXY0hjgIIwGIOzAcaYAROaiUeIoQLGKMGnEa6qEibkMEMUyrI0hTIUGAAGxArVu/nPhAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Ancient Cudgle</td>
+<td class="center">24(+9,+10)</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">67</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="Hero&#39;sPledge"
+class="rare"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADlQTFRFAAAARz5VZll9V0trUEVhLig3ekwRc3d74Jw2PDRIs2wQnqKnVTMiRS4jKB0XOiohHhYRXWFkMCEZGcR5MgAAAAF0Uk5TAEDm2GYAAABxSURBVBjTbY9JFoAwDEIdO5mYlvsfVpxiF7Ljv/ACw/CjHVAFan193E7F2G6yt7zM0zSPeb0JAZKZFTiAIKUC4ANGZz0QRnpQRIpacBAIVoLgF8yodpEM4Rd7e7DpklQ15ObdN5yK1dfh2lK7vUzg8Qen1wjRiWJiLAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Hero&#39;s Pledge</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">24(+9,+10)</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">67</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="Guidance"
+class="rare"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAFpQTFRF07Q607Q607Q607Q607Q607Q607Q607Q607Q6AAAATkgvMC4kOTctQUA6ZVorPTotYFk6cWMt07Q6T0kvOTYlZVkrjYB1wK+ggG8+ICEiVUknJCYrMjQ6MywWEOU5mAAAAAp0Uk5TSEkYCj0+HhcJAFlKozQAAABpSURBVBjTrY1JEoAgDARxg+CuyJ78/5uCF9CzqepL18yEyc+xP0QIAREfgrWIjCjG6DLOWWdjqnhPlCEy3ph6w7xHYZknqES3qX28oAjR61MPbRGcHefR8DqxpoQoAi61q3pDguAifbkB3AUMi9pC65YAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Guidance</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">24(+9,+10)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">67</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="Tracker&#39;sResolve"
+class="rare"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAC1QTFRFAAAAAPT/AJ/RAK3YAKzYAIStkgD/swD/AOz/pv//0qb/EP//AMv/////AEJXDbApWAAAAAF0Uk5TAEDm2GYAAAAtSURBVAjXY2AgCnDBGGsToAx2uBz3Zihj7wwFCEPyRgCE4XPmAYTB9444exgA1h4Hh0QTtvMAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Tracker&#39;s Resolve</td>
+<td class="center">34(+14,+14)</td>
+<td class="center">10(+2,+2)</td>
+<td class="center">10(+2,+2)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">90</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6</span></td>
+</tr>
+
+<tr id="FlourishedNock"
+class="rare"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAA//9YREEAQRwAgkQA1s8lgn4QJQsAXS0AOVZ7nwAAAAF0Uk5TAEDm2GYAAAAwSURBVAjXY2AgErAJgKkEMAKCjo6OBjCjxdUFwjANDjUAM8oKygrAjKKCogIG0gAAgZEJGQO9EasAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Flourished Nock</td>
+<td class="center">10(+2,+2)</td>
+<td class="center">34(+14,+14)</td>
+<td class="center">10(+2,+2)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">90</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6</span></td>
+</tr>
+
+<tr id="ManaClutch"
+class="rare"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAGNQTFRFmP8AmP8AmP8Al/8AmP8AmP8AmP8AmP8AmP8AmP8AAAAAeZoFs/8AnP8AbnYHOjQBV18BW2kBUGQB0f+NOjMBPB0CXT0JvP8AY1AIQEEBWjUKnf8AWjIKbG0H////LBUBWTAKVfCPlgAAAAt0Uk5TL1YwAygGSwMhEQDtA7FHAAAAa0lEQVQY06XPSQ6DMAwFUNOGxA5toWVIIIN9/1MSFlTQZbH8N0+yvgz2Z+ASxMWcgNAjHYAgvfWNvmCwC67XeN9h8a/m4SpVFxDJY45tCs+Q0IAIc5bMNKePnicLzOVgCw3q0CJlY23++2UFVuoMfUeMZUoAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Mana Clutch</td>
+<td class="center">10(+2,+2)</td>
+<td class="center">10(+2,+2)</td>
+<td class="center">34(+14,+14)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">90</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6</span></td>
+</tr>
+
+<tr id="Preparation"
+class="rare"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABqlBMVEUAAADj3tIuLy8mJycoKSkgISEsHweWLRdWPw9ZPg/l4dXj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tLj3tItLi5LS0nd2c3h3NDh3NDh3NDd2MxBQUAuLy8uLy8wMTGfm5HKxLXFv7LIwrSdmY8vMDAuLy8uLy8vMDBbWlZjYlxjYVxkYl0mJycuLy8uLy8uLy8pKispKysqKScrIhIqKyofICA1NjYuLy8uLy8uLy8bHB0hIyQmIRUrHwgjIh8eHx8wMTEuLy8uLy8qKysgISEkIBgpKisgISEgISEoHw4eICIgISEgISAoHwmEIh0KISIsHwcqHweWLRcsHwc0JglWQRhWPw9WPw8rHwcuIAbFvKpdQxVZPg8qHQU4KxTGwLPo5Nnl4dUrHQU4LBTEvrDm4dVQT0smJyclJiccHR0XGBkCAgMvJBA5KAo3LBcxJhQkGQYnJB0+KgpPNg5XPQ9aPg9cPg80KxtyIBGxIxtnOhF2NhO4IxxcIQ6HJRVZNQ5mNRCWLRc+LgtRPRg5LBOxqJb///9+tsm9AAAAbXRSTlMAAAAAAAAAAAAAAA0XBHPPKAKCUKh/AbgM2LIFD7t+DNi2DgRL0PV7DNXyzkcjZNR9DNRYAxwUArePKtltDBbOlwK09ub68noPh4lo0ohc/v6GGUfIhyECs1im+vntUhqZvCsOW7OzeQEBAQEByf4HkgAAAAFiS0dEjRsM4tUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfjBgYVGzqD+BpDAAAAAW9yTlQBz6J3mgAAAM1JREFUKM9jYMAHGLl5eBnRxRgZ+fgFgCSqqKCQkLCIqBi6qLiohKQU+aJM0jKycvIKikrKTMiiKqpq6hqaWto6KKK6evoGhka5ecbMCDETUzNzC0sr6/wCG1u4YiY7ewdHJ2cX18IiN3eEqIenl7dPcUlpWXmFLwvCXFY//4DKquqa2rpAViTRoOCQ+obGpubQMCRRBrbwiJbWtvaOSHYGFNGo6M6umNg4DhRRtviE7p7EpGRO1BBmS0lNS8/gQgt3tsys7BxG9NigNgAACKsowBl0k2AAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDYtMDZUMjE6Mjc6NTgrMDA6MDDnGIBrAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA2LTA2VDIxOjI3OjU4KzAwOjAwlkU41wAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAA1Oel8hvoAAAAWdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgANTKGAZ//AAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE1NTk4NTY0Nzihsez5AAAADnRFWHRUaHVtYjo6U2l6ZQAwQslvGO0AAAA1dEVYdFRodW1iOjpVUkkAZmlsZTovLy90bXAvdGh1bWJsci9pbWc4NzAwNjA4ODgwMTM2NTc4OTc3T9sulgAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Preparation</td>
+<td class="center">30(+10,+10)</td>
+<td class="center">12(+4,+4)</td>
+<td class="center">30(+10,+10)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">120</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7</span></td>
+</tr>
+
+<tr id="PackSpirit"
+class="rare"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Rare</td>
+<td>Pack Spirit</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">56(+20,+20)</td>
+<td class="center">8(+2,+2)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">120</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7</span></td>
+</tr>
+
+<tr id="Wallcrash"
+class="rare"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Rare</td>
+<td>Wallcrash</td>
+<td class="center">11(+2,+3)</td>
+<td class="center">74(+28,+26)</td>
+<td class="center">11(+2,+3)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">160</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8</span></td>
+</tr>
+
+<tr id="Archer&#39;sDodge"
+class="rare"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACJVBMVEUAAAA0Hh42IB8zHR5OKylNKihRLSo0Hh40Hh5CJSRQKylPKylOKihOKidOKylBJCMzHh40Hh40Hh40Hh49JiFCKyNBKiMzHR42IB80Hh5CKyOTcjxsUDAzHh42IB80Hh4zHh42IB80Hh5BKiNtTy9dQiszHh42IB80Hh4wGx0xHB0zHR40Hh4zHR5oTDN9XjtFLSUwGhxJMCfgr2SXckguGRwzHR4vGxxOMClgOzBdOS8rGRpOKylKJyeKYkKkeUxgOzBMKChNKihNKShNKSZNKSdNKihNKihRLSpRLSpRLSpRLSpQMylgOzBjPjJkQTpkREFkQTlkPjJkPzJVNyxFLiVDKyOxjEzJoFrrumnw1Kzv6uvv1KvwvmvxwG/ZrWK8llSkgUOgfD+blF6MonuiuYqp0bis5eOku4ujtIWUpXqLlWqqi0pxUzGgfD52jWs+lZREpKFMt7JUx8A/lJM7iolGg3qhiUt3jmpBlpRHpaBQuLJXyMJDlpI/i4hJhHmifT93jms9i4lHhHqjikxyVDF9eFSCoH1Ppp5PuLJBlZNklYCFj2hzWziDYz3Gq2ZXp5tOt7NAlZOLn3fDmlZFLSWEZT7FrWhUp5xNt7M9lJOJn3jEnFdHLyaGbkeis4R+w6hUx8JWx8FOt7JQqJ+Ys4mTi2GuxZRnybxqzcdivbNsrpjjwHWpiFjz2pDw+fHw577fvnNzTjqpgVeplI6pinMuTAirg2iqAAAATHRSTlMAAAAAAAAADnKAgICAgICAgIJADDXmjhQDcev888oZgOMcP5DxwG8OHON/439vwPGQcev888oZDDXmjhQOb8DxkD9y6OPlyhkOHBkD3DODEgAAAAFiS0dEtqoHC/EAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfjBgoQFjnjQkjnAAAAAW9yTlQBz6J3mgAAARRJREFUKM9jYKATYGTn4OTi5uHl5eHj5hcQFGKEijMJi4j6+Pr5BwQEBgWHhIaJiUswQSQkpaTDIyKjoqNjYuPiExJlZOWgEvJhSckpqWnp6WkZmVnZObkKinCJvPyCwqLi4qLCktKycmSJpIrKquqamuqq2rp6CiUaGgugEk3NLa1wCSVllbb2jk6QRFd3T6+qmjoT1Ocamn39EyaCJCZNnjJVC+ZzBiZF7WnTZ8wEScyaPWeuDhNcQl1Xb978BQsXLV6ydJm+gRITIhiZDY2Ml69YuWr1GhNTM2ak8GUyt7Bcu279ho2brKwlkDQwMLDY2Npt3rLV3sGRBT1SWJ2cXVzd3FkxYovNw9PT08ubjezoBgD5O2Jl9jzq4gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNi0xMFQxNjoyMjo1NyswMDowMCJcuuIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDYtMTBUMTY6MjI6NTcrMDA6MDBTAQJeAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADQ4h2CHLQAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA0OH/PR6AAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU2MDE4Mzc3N8AeaEoAAAAOdEVYdFRodW1iOjpTaXplADBCyW8Y7QAAADV0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL3RtcC90aHVtYmxyL2ltZzE2Mjg3NDE4NzQwMzczNjkyMDfFqcucAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Archer&#39;s Dodge</td>
+<td class="center">40(+13,+14)</td>
+<td class="center">16(+6,+4)</td>
+<td class="center">40(+13,+14)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">160</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8</span></td>
+</tr>
+
+<tr id="Featherfist"
+class="rare"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9">
+<td><img src="/question.png" alt=""></td>
+<td>Rare</td>
+<td>Featherfist</td>
+<td class="center">15(+2,+4)</td>
+<td class="center">98(+39,+33)</td>
+<td class="center">15(+2,+4)</td>
+<td class="center">128</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">213</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9</span></td>
+</tr>
+
+<tr id="Smith&#39;sShell"
+class="rare"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9">
+<td><img src="/question.png" alt=""></td>
+<td>Rare</td>
+<td>Smith&#39;s Shell</td>
+<td class="center">53(+18,+18)</td>
+<td class="center">22(+7,+6)</td>
+<td class="center">53(+18,+18)</td>
+<td class="center">128</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">213</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9</span></td>
+</tr>
+
+<tr id="Unbreakable"
+class="epic"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAsZMAvZ4AUjkhnYIA9MwAAHCl37oAAJLRAF6L/+w9QS0aycOQBAAAAAF0Uk5TAEDm2GYAAABkSURBVAjXY2CAA65VUUtDQYzF1qt3VxcAGavaItJngxiry1YsAzMWdwW1TQaLNAd3zlYAMbKj0yY7QKSgIssqls0GiUS1VaSDGdFtETOrQQzWnRWzt4At867c7QBmMIq4MCABAP7nI/Tg1vKIAAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Unbreakable</td>
+<td class="center">5(+4,+4,+3)</td>
+<td class="center">6(+0,+1,+1)</td>
+<td class="center">5(+1,+1,+1)</td>
+<td class="center">16</td>
+
+<td class="center">21</td>
+
+<td class="center">27</td>
+
+<td class="center">32</td>
+
+<td class="center"></td>
+
+<td class="center">32</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1</span></td>
+</tr>
+
+<tr id="Stormshield"
+class="epic"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRFAAAAO9rhHl5iyJ0/29PA/+qh775a7+nW1KhKs4s2+shg4dvLtK2cjeuTJwAAAAF0Uk5TAEDm2GYAAABdSURBVAjXY2CAA2ZjBq5VAUCGjUdaSvkuIGOOS9dxMIPzSOvx6gAI4/RuMKNLMSptAYgxWelEB5hxGigFZRyvhjNAihmmtB0BSzHMaTsSBbaMs+1MAsTamWkMSAAASzMjwjqR2UYAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Stormshield</td>
+<td class="center">7(+8,+6,+5)</td>
+<td class="center">7(+0,+1,+1)</td>
+<td class="center">8(-1,+1,+1)</td>
+<td class="center">22</td>
+
+<td class="center">29</td>
+
+<td class="center">37</td>
+
+<td class="center">44</td>
+
+<td class="center"></td>
+
+<td class="center">44</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2</span></td>
+</tr>
+
+<tr id="DragonHeart"
+class="epic"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABJQTFRFAAAAKSo4LS49RkhdNTdIIyQsZhMHGQAAAAF0Uk5TAEDm2GYAAABpSURBVAjXHY7RDcAgCAX5YQATHaAWJ9AF2if/tpH9VymUkHCBC3lkRt5erPyq2SLaW3Rnhxez1ubAHYLmGhsw2q93DI3T7uiH0Xpuh1RcCUfjJ58YhQMEs8TkKbcGPFWu2JClnBb9FDk+fFMU2Y8MYxIAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Dragon Heart</td>
+<td class="center">9(+11,+6,+6)</td>
+<td class="center">9(+1,+2,+2)</td>
+<td class="center">12(-2,+2,+2)</td>
+<td class="center">30</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center">60</td>
+
+<td class="center"></td>
+
+<td class="center">60</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3</span></td>
+</tr>
+
+<tr id="ManaReserve"
+class="epic"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADxQTFRFAAAAmXWnVjFkTSxaX0Br49boa0l4h2SVaUZ4VTZiYDpwjHmfe1SJkn6nWz0xOSBETy5dVDhgOB9DfGiOYCsXyQAAAAF0Uk5TAEDm2GYAAAA7SURBVBjTY2CgBPDyoQkIo4kIcnBxo/CF+Rlw83lY0PisjMJMyMrZ2IUFmJEFOAUEBIRQTBQSEqLERwAAEAH8UhzcOQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Mana Reserve</td>
+<td class="center">14(+13,+12,+11)</td>
+<td class="center">12(+1,+1,+1)</td>
+<td class="center">14(-1,+1,+1)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center">80</td>
+
+<td class="center"></td>
+
+<td class="center">80</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4</span></td>
+</tr>
+
+<tr id="LightBlade"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRFAAAAC2lpeejpFZud7tqNqY80171WMyoJRDkQ2trEiop5V1dMwsKtS8eMrAAAAAF0Uk5TAEDm2GYAAAA8SURBVAjXY2AAA55ZEJrh5CmowJzVMIENxAmwwgUyoSoYWlZDGBzt0WA6oaOAHcxQaYdap5wAZRQLQGgAxX8WED7tsNAAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Light Blade</td>
+<td class="center">19(+19,+16,+16)</td>
+<td class="center">16(+1,+1,+1)</td>
+<td class="center">19(-2,+1,+1)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="OathKeeper"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAFFQTFRFAAAAIiYsLzM7IRcDTjsTLDA3Py8ONDhAMzhA3sJP892IKzA3VD8WUUkYXUcaJysyR01WLyIIc2YaNSYKOywMWmFuZWx5foaTRTQQFxoeR01YVjCLdQAAAAF0Uk5TAEDm2GYAAACDSURBVBjTTc/hFoMgCAVgtmZq060oQXn/Bx2U7ci/+51zUSCEsEKfR2sN3kLUxYuIQUZedbwnzCdMB0ZmJsRtUoCvHPW1LBHrvlm+4MOljsAGMkBhLjJCIioyVtK4Qx+uySp1vzLAk87KfGcDq/zBCUaFOecuzhHrT7NedndaY91xxR8Xnw7wiW2zxwAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Oath Keeper</td>
+<td class="center">2(+1,+1,+1)</td>
+<td class="center">50(+16,+16,+16)</td>
+<td class="center">2(+1,+1,+1)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5</span></td>
+</tr>
+
+<tr id="Cauline"
+class="epic"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAA8ua0Mjc/HSEmeWow////Vl5rQEZQ5c1oFRgbPZDI1AAAAAF0Uk5TAEDm2GYAAAAiSURBVAjXY2AgF4i2QBlqxTBGCZTR2j4BwmDOhKmeQKSpABIDBGU0sTk5AAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Cauline</td>
+<td class="center">24(+32,+20,+20)</td>
+<td class="center">24(-4,+2,+2)</td>
+<td class="center">24(-4,+2,+2)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center">144</td>
+
+<td class="center"></td>
+
+<td class="center">144</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6</span></td>
+</tr>
+
+<tr id="YogiMat"
+class="epic"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABg1BMVEUAAABeH0ZhH0hKGDdgH0dLGDdAFzAwFCVIFzUoEiAtEyMmEh8nEiAnEh9eHkZfH0ZgH0dfH0ZhH0dhH0hKGDdKGDdLGDdZHUJgH0dfH0doIU1dHkVdHkRhH0hFFjNOGTlOGTlNGTlZHUJgH0dhH0hfH0dhH0dyJVVfH0ZJFzVdH0WLL2g/FzBJFzYvEyRGFzQ0FSgrEyIoEiAsEyM4FitYHkIxFCYqEiEqEiEpEiEoEiAlER4sEyMwFCYqEiEnEh8nEiAnEiAnEiAnEh8nEh8nEiAoEiAoEiAoEiBlIUtdHkVoIk1fHkZyJVRXHEB5J1pbHUNWHD9aHUJ7KFtdHkR2JldWHEBjIEloIU1UGz50JVZvJFJcHURYHEBGGTVcHkSRMWxsJVFFGTROGzpxJFRZHUFhH0hwJFNeH0ZPGztNGjlDFzJLGjhMGjk3FSpTGz14J1lBGTInEyA5FixRGjs0FCc0FSg1FShEGTQuFCQ7Fi06Fiw5FisuEyQqEiEpEiH///8K5Hk+AAAASXRSTlMAAAAAAAAAAAAAAAAAADNaWVlVFBFGSUlJR7P4dCcCQfL8+/v7+/v9kXDW/ZOTk5P+8YWK+P728OhTEhhg94csMC4LIIaMjI07Hoo++gAAAAFiS0dEgGW9nmgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfjBhwKNyP2fIqbAAAAAW9yTlQBz6J3mgAAAMdJREFUKM9jYBhJgJGPX0BQQEBQSJgJyGMWERUTlwADSSlPL28fH29pGVkWBlY5eQVFJWUVZWVlVTV1Xz//gAD/wCANRgZWTS3t4ICQ0LDwiMioaM+Y2ICA2KA4HTYGVt34hMSk5JRUnzS/9IzMrOycnOzcPD12Bg79/ILCouJ4r/wSr/ik0jIgKDcwNOJk4DI2Ma2orKyqqq6pqjIzBwMLSytOBm5rG9vauvo6MLCzdwABRyceoHN5nV1c3SDA3YNzoIOSAAAA3tIxljT3lJUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDYtMjhUMTA6NTU6MzUrMDA6MDA4J7egAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA2LTI4VDEwOjU1OjM1KzAwOjAwSXoPHAAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAA2NyXp+D4AAAAWdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgANjhN+SUiAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE1NjE3MTkzMzVf9g4CAAAADnRFWHRUaHVtYjo6U2l6ZQAwQslvGO0AAAA2dEVYdFRodW1iOjpVUkkAZmlsZTovLy90bXAvdGh1bWJsci9pbWcxNjM0NjEzNDE1ODE3MTIzNzQ4MHO1OJQAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Yogi Mat</td>
+<td class="center">32(+68,+28,+28)</td>
+<td class="center">32(-18,+2,+2)</td>
+<td class="center">32(-18,+2,+2)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center">192</td>
+
+<td class="center"></td>
+
+<td class="center">192</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7</span></td>
+</tr>
+
+<tr id="BookofWisdom"
+class="epic"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACDVBMVEUAAACGMTfw8OUlCg2HMjjy9On09epmIyny8+j/4otEFBlFFRqELjSRRUrl3NLy8+jz8+ja1847IyQiBwqGLzWTRkvn39b09+v3+O3e3NI7IyUiBwpkISfPs6709+v/4ov/5oyzoYEjCAtDFBnn4Nbq5dvy8+ju8vP46bb/548lCg1FFRqdWFvn39b09+v09ev289//6JjOs6309+v2+OyspJ9FFRpHFhtNGh8sDA8mCg0lCg1FFRpEFRpNGh8sDA8kCg0lCg1FFRpFFRpGFhsmCg0lCg0lCg1EFRpGFhtLGB0pCg9DFBlkISeBLTRlJCxCFhsjCQxEFBlmIyiDMDZoKCxEGBskCQxvLzSyhYN/cG4wFhlKFxx2JiyyhIOSdUsfAgclCg1HFhtYICR2MzeZeE4tCg8mCg1THyNhIyezhYOWhnb10WaadDovCxAnCw5UHyNVICRaISV4Jy2yhILm39Xl39WAb202Fwrlti+YbSMvCxFWICRXICR2MjeNQkh0O0BPIihFIBLbqhyRZhhUHiOMVULDily0fDZxQyA7FhKFWhVhORQxDRFTHSKleVT2033ywkCRZSQwCxExDBIyDRIyDxFVHyN1MjKRRD54Oi5UIx8zDhI0DxIzDxJSHSJtJy2BLTVlJSxKGR4wDhEzDhFIFxxSHCGRZiQoCw6IUkDDil20fTduQiAuTAjsOBohAAAAWHRSTlMAAAAAAAAAAAAAAAAOHBwODhwcDnLo6HJy6OhygMBvDm/Af4DmNQwMNeZ/gPzrcXHr/L99fb8/kPHxkD8ZyvPzyhkDFI6OFAM/kPHxyuXj4+XKGRwcHBwZ4bNYQAAAAAFiS0dErrlrk6cAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfjBh0UNTYHk+XtAAAAAW9yTlQBz6J3mgAAAQdJREFUKM9jYBhgwMjDy8fPBGEzCQgKCTNDJVhERMXEWSFsNglJKWmYBLtMRKSsHD8HAwOnvIJiVLQSTIJLOSY2TkVVjYlJXUMzPiFRCybBrZ2UnKKjq8fKpm9gmJqWjiyRkZmSZWRsYpqdk5uXjyxRUFhUXFJaVl5RWVWNKlFTW1RX39DY1NyCLlHT2tbe0dnV3dOLLtHXP2HipMlTpk5Dl5g+Y+as2XPmzp2HJGFmbjG/pnDBwkWL581dYmllDZNg4LaxtZsO1rF0nr2DI1ycgdvJ2WXZcqAdK6pXurq5IySAUh6eXqtWr1nrjWQOzDQfXz//gEBHNHGgaUHBIaFh4e7oEsQDAMfvUtVk6nAuAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA2LTI5VDIwOjUzOjU0KzAwOjAwhyhxngAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wNi0yOVQyMDo1Mzo1NCswMDowMPZ1ySIAAAAgdEVYdHNvZnR3YXJlAGh0dHBzOi8vaW1hZ2VtYWdpY2sub3JnvM8dnQAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABd0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQANDiHYIctAAAAFnRFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADQ4f89HoAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTYxODQxNjM00jjpNQAAAA50RVh0VGh1bWI6OlNpemUAMELJbxjtAAAANXRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vdG1wL3RodW1ibHIvaW1nNDA5MjA0MjU5MDU2NzU4MTIxOQeWny0AAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Book of Wisdom</td>
+<td class="center">43(+90,+38,+37)</td>
+<td class="center">43(-24,+2,+3)</td>
+<td class="center">42(-23,+2,+3)</td>
+<td class="center">128</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center">256</td>
+
+<td class="center"></td>
+
+<td class="center">256</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8</span></td>
+</tr>
+
+<tr id="Manabolt"
+class="epic"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9">
+<td><img src="/question.png" alt=""></td>
+<td>Epic</td>
+<td>Manabolt</td>
+<td class="center">58(+121,+52,+49)</td>
+<td class="center">58(-33,+3,+4)</td>
+<td class="center">56(-31,+3,+4)</td>
+<td class="center">172</td>
+
+<td class="center">229</td>
+
+<td class="center">287</td>
+
+<td class="center">344</td>
+
+<td class="center"></td>
+
+<td class="center">344</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9</span></td>
+</tr>
+
+<tr id="Shiv"
+class="common"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAAeiAgaxMTQUZLHB0gRkxSV11lkApF1gAAAAF0Uk5TAEDm2GYAAAAzSURBVAjXY2DAARKgNCuMEQxlsJpCGcFQEVZTMzDNAhNQcUsD005CUK2OClCGiwMDAQAA9eUGnNGLpsgAAAAASUVORK5CYII=" alt=""></td>
+<td>Common</td>
+<td>Shiv</td>
+<td class="center">4</td>
+<td class="center">4</td>
+<td class="center">3</td>
+<td class="center">11</td>
+
+<td class="center">11</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">11</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1 Shop</span></td>
+</tr>
+
+<tr id="Oakenshield"
+class="common"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAPS8hmKKpNjk7eYGGRzUjYmhsUDwoT1NWY0szFiGLgQAAAAF0Uk5TAEDm2GYAAABfSURBVAjXY2CAA5aOjrYUEKMxfOZ0FwUgoyV85qT0BCCjTbVSrRzEaE0KSp/eAGJMc6kEM0ynJEEYhm5hqlNBDObUmSkRIHOYxWeWeYCNNqwsbwAzmEMjoLYZNzBgAwCq9xnzDUiQdAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Oakenshield</td>
+<td class="center">4</td>
+<td class="center">4</td>
+<td class="center">5</td>
+<td class="center">13</td>
+
+<td class="center">13</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">13</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2 Shop</span></td>
+</tr>
+
+<tr id="SouthBorderShield"
+class="common"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACpQTFRFAAAASHN04dS2YT8t4+PHWjopV5aO7+/PYrCmdkkyQGJkt7egJj8+SSscBoMAhAAAAAF0Uk5TAEDm2GYAAABfSURBVAjXY2DABKwzGWbOBDFCy2d2ZE0AMsJddqSBGeZHThw7ZQBi+OzJkQIxjLQ3rloYAGRYdCwv1wYxbqQtd4Ewctb4aF8AMQ4eP3QaxLgrtXr3XhCD9y4QYLGaAQBccyPoQdczkQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>South Border Shield</td>
+<td class="center">6</td>
+<td class="center">6</td>
+<td class="center">7</td>
+<td class="center">19</td>
+
+<td class="center">19</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">19</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3 Shop</span></td>
+</tr>
+
+<tr id="Ripper"
+class="common"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAAah8YKB0SYUoxcXqCW2NjO0FEPi4d4krlLwAAAAF0Uk5TAEDm2GYAAABESURBVAjXY2DACwoKQKQDA4MxmJFekFYOFk83LixxcQGKMygVloaGhoDFykLTQkFCzAVpDGmpQEZxAdQYdhijgIEAAAAAGg1go+EqBQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Common</td>
+<td>Ripper</td>
+<td class="center">9</td>
+<td class="center">9</td>
+<td class="center">9</td>
+<td class="center">27</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4 Shop</span></td>
+</tr>
+
+<tr id="DeityBeads"
+class="common"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAA9QTFRFAAAAe1IQ07Q6LSUWQywHfGcLjAAAAAF0Uk5TAEDm2GYAAAAxSURBVAjXY2AgDjA6QRksziIQhgKDC5gWMWAwAjNcDBgdwAwmYxUIg0EEpt2FSGsYAOJiAx8IDNvUAAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Deity Beads</td>
+<td class="center">12</td>
+<td class="center">11</td>
+<td class="center">12</td>
+<td class="center">35</td>
+
+<td class="center">35</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">35</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5 Shop</span></td>
+</tr>
+
+<tr id="Trail&#39;sResolve"
+class="common"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAA4vmwhtcDpaoA////yf9NZH0pUKk//QAAAAF0Uk5TAEDm2GYAAAAiSURBVAjXY2AgEbAlQBkpYVABR1WIEFtQMlQu1QxdMdEAACHaBAnqAhh5AAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Trail&#39;s Resolve</td>
+<td class="center">16</td>
+<td class="center">16</td>
+<td class="center">16</td>
+<td class="center">48</td>
+
+<td class="center">48</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">48</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6 Shop</span></td>
+</tr>
+
+<tr id="GrannyPack"
+class="common"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAAwLcKcGBSZTsROCEKloNxTi4OwqqU5Miv9HvOxQAAAAF0Uk5TAEDm2GYAAABDSURBVAjXY2BABuy4GRwQqoCBoQHMaEBiQOQazNggjGIRs3Sw3hTjxFQwo80lJQjM6MhoATNYKzxKFcCKw8uDkF0AAEcQC7ChcsiGAAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Granny Pack</td>
+<td class="center">22</td>
+<td class="center">21</td>
+<td class="center">21</td>
+<td class="center">64</td>
+
+<td class="center">64</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">64</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7 Shop</span></td>
+</tr>
+
+<tr id="StrawberryDrops"
+class="common"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8 Shop">
+<td><img src="data:image/png;base64,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aWY6RGF0ZVRpbWUAMjAxODoxMDoxOCAxNToyMzoxN4NMb8QAAAATdEVYdGV4aWY6RXhpZk9mZnNldAAyMDZ2aVPnAAAAJ3RFWHRleGlmOkltYWdlRGVzY3JpcHRpb24AQ3JlYXRlZCB3aXRoIEdJTVAQZNIlAAAAE3RFWHRleGlmOkltYWdlTGVuZ3RoADQ44nG47gAAABJ0RVh0ZXhpZjpJbWFnZVdpZHRoADQ4SJXOiQAAABl0RVh0ZXhpZjpTb2Z0d2FyZQBHSU1QIDIuMTAuMEdXzH8AAAAkdEVYdGV4aWY6dGh1bWJuYWlsOkJpdHNQZXJTYW1wbGUAOCwgOCwgOCAb9FMAAAAcdEVYdGV4aWY6dGh1bWJuYWlsOkNvbXByZXNzaW9uADb5ZXBXAAAAHnRFWHRleGlmOnRodW1ibmFpbDpJbWFnZUxlbmd0aAAyNTZQcDADAAAAHXRFWHRleGlmOnRodW1ibmFpbDpJbWFnZVdpZHRoADI1NogG+hQAAAAodEVYdGV4aWY6dGh1bWJuYWlsOkpQRUdJbnRlcmNoYW5nZUZvcm1hdAAzNTjYhncGAAAAL3RFWHRleGlmOnRodW1ibmFpbDpKUEVHSW50ZXJjaGFuZ2VGb3JtYXRMZW5ndGgAMjAyORE4MFMAAAAqdEVYdGV4aWY6dGh1bWJuYWlsOlBob3RvbWV0cmljSW50ZXJwcmV0YXRpb24ANhIVihoAAAAgdEVYdGV4aWY6dGh1bWJuYWlsOlNhbXBsZXNQZXJQaXhlbAAz4dfNWgAAAHR0RVh0ZXhpZjpVc2VyQ29tbWVudAAwLCAwLCAwLCAwLCAwLCAwLCAwLCAwLCA2NywgMTE0LCAxMDEsIDk3LCAxMTYsIDEwMSwgMTAwLCAzMiwgMTE5LCAxMDUsIDExNiwgMTA0LCAzMiwgNzEsIDczLCA3NywgODABXzo2AAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADQ4h2CHLQAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA0OH/PR6AAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU1ODg0NTg5OciNhW8AAAAOdEVYdFRodW1iOjpTaXplADBCyW8Y7QAAADV0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL3RtcC90aHVtYmxyL2ltZzQ5OTUxMDIzOTcxMDIwNTE3MjMDD8/HAAAAAElFTkSuQmCC" alt=""></td>
+<td>Common</td>
+<td>Strawberry Drops</td>
+<td class="center">29</td>
+<td class="center">28</td>
+<td class="center">28</td>
+<td class="center">85</td>
+
+<td class="center">85</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">85</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8 Shop</span></td>
+</tr>
+
+<tr id="Quickquiver"
+class="common"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9 Shop">
+<td><img src="/question.png" alt=""></td>
+<td>Common</td>
+<td>Quickquiver</td>
+<td class="center">38</td>
+<td class="center">37</td>
+<td class="center">37</td>
+<td class="center">112</td>
+
+<td class="center">112</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">112</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9 Shop</span></td>
+</tr>
+
+<tr id="Fortress"
+class="rare"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAUFZdmaGrQkdNVVtiPEFHSk9Who6XcHiBKSwwyHkl2AAAAAF0Uk5TAEDm2GYAAABGSURBVAjXY2BAgJmaMyeAaM2UYtdIBSCDPbE5rQIkwtle3tGJKpWCWwpDF2dKsVskmBHYljoTbNfUVkuwXQycM2ciOYEBAEfwGUeKMnZhAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Fortress</td>
+<td class="center">5(+2)</td>
+<td class="center">5(+1)</td>
+<td class="center">6(+1)</td>
+<td class="center">16</td>
+
+<td class="center">16</td>
+
+<td class="center">20</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">20</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1 Shop</span></td>
+</tr>
+
+<tr id="Megashot"
+class="rare"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAzLExfIKNRkhQWVxlNzpAe2sdrpcqJictSD8P9a5wGgAAAAF0Uk5TAEDm2GYAAABMSURBVAjXY2DAB2ZCaU6GCRC6c+bMCR0dDAzT0tLSJpl4dDBMFBcXnGTiYsEwvb28HMiIYJheDmQYh0YwTGsDqgkFMjhngnU1MBABAINeGFPhATsOAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Megashot</td>
+<td class="center">7(+2)</td>
+<td class="center">7(+2)</td>
+<td class="center">7(+2)</td>
+<td class="center">21</td>
+
+<td class="center">21</td>
+
+<td class="center">27</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">27</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2 Shop</span></td>
+</tr>
+
+<tr id="Dunbet"
+class="rare"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADNQTFRFAAAAAEVWzsEA2sOnx7KZ2qd0q6AAqwEAAGuE6LeGjwsLf1NBwZJkVTcrcgEAZkIzNCEa9s6fSQAAAAF0Uk5TAEDm2GYAAABPSURBVBjThcpBDoAgDETRKhQtSKf3P63dQIox+nfzMkSvsYiw8NzXaIBtp1erTtDDC0CGHUUjFBSoBcgp5QUa4A/6gf6A/g3WfAdwsWWHbpY4BQe8ZXIcAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Dunbet</td>
+<td class="center">10(+2)</td>
+<td class="center">9(+3)</td>
+<td class="center">10(+3)</td>
+<td class="center">29</td>
+
+<td class="center">39</td>
+
+<td class="center">37</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">37</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3 Shop</span></td>
+</tr>
+
+<tr id="NordicBulwark"
+class="rare"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAADBQTFRFAAAAJyksx6+SOykfLR4WOicdIictLB4WSjMnqZaAR0pPXUExOz5CMTQ4JBgRHSEnmw4+aAAAAAF0Uk5TAEDm2GYAAACUSURBVAjXHY0hDsIwAEW/rekBOAQX4QgIBG6GA0CYIplbT8ABMBhcE+oQC2Qe0zqC6cTGRpZ2n41n3nMPEFAKf7z3bvJxq/X1PcZr14VuLzBfGW3MwUHOvnmW0yOWS6PTwiLeP1kapigin8FaMOntKdYNqqTdhFhfUJUkw2OAXNPG9uYgFrSBHG+S577xAlAVOQj8AJ2BVM76qrx3AAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Nordic Bulwark</td>
+<td class="center">14(+3)</td>
+<td class="center">13(+3)</td>
+<td class="center">13(+4)</td>
+<td class="center">40</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">50</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4 Shop</span></td>
+</tr>
+
+<tr id="WheatBucket"
+class="rare"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAE5QTFRFAAAAwqtG0btOIhoSSDgUIxkQR3MVmYU8OF4RxK5HqqGOf5SgRE5TNykdPzAhKB0SKB8XJy0xIhkPJx0StJ4+TTkQ0rxO0LlNMSQYGhMLaxWZggAAAAF0Uk5TAEDm2GYAAAB6SURBVBjTdY/RDsMgCEXZunXV1lYtoPz/jw7c5nzpzQnJPSFBAX45NTDk7OMb6eNCSEzR+LRSYqhbNabWX/QM+74a0rp/SKh1NUwQzV7CcWyGClcIweeck6Gi0A14EUkNu0DMOC//F9wZkJCxCwesffyWA+1lNDAuvAFluwiuzIVmLgAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Wheat Bucket</td>
+<td class="center">18(+5)</td>
+<td class="center">17(+4)</td>
+<td class="center">18(+5)</td>
+<td class="center">53</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">67</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5 Shop</span></td>
+</tr>
+
+<tr id="SwiftEvasion"
+class="rare"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACpQTFRFAAAALDU8eIKI3OXolp+wuMrQR09Uf0UAAF9kyWwAAJWbHCYz7owZAMHJN/Ce+wAAAAF0Uk5TAEDm2GYAAABLSURBVAjXY2DABGwqoSFqAkDGjlWrZs6sBjEW3z1jCWasvXvmJApj+5wzd291Y2dMPnPXCsRgA4kkgIzWnLlqGdgOltCQBCxWMwAAw8UonjtDOSMAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Swift Evasion</td>
+<td class="center">24(+6)</td>
+<td class="center">24(+6)</td>
+<td class="center">24(+6)</td>
+<td class="center">72</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">90</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6 Shop</span></td>
+</tr>
+
+<tr id="BalanceofHatred"
+class="rare"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADNQTFRFAAAANjxEFhoi/+Q+/+6BoooAICxCLUNsCA0SCQ0SFxoeFyArEBYeAQQGjZiqa3SDNTxJwOOjpQAAAAF0Uk5TAEDm2GYAAABVSURBVBjTjY9LDsAgCETpT0BAuP9ptasq3UhCwrwEZgDYr/YDkYAHNJ+0HqSLFhKld8JyI5ZLZBBvY6nWp45mJWWL77BxMNtsYm7ma44zRfEcLHZ/7If7Au8dA7tSAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Balance of Hatred</td>
+<td class="center">32(+8)</td>
+<td class="center">32(+8)</td>
+<td class="center">32(+8)</td>
+<td class="center">96</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">120</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7 Shop</span></td>
+</tr>
+
+<tr id="SpikedDefender"
+class="rare"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8 Shop">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Rare</td>
+<td>Spiked Defender</td>
+<td class="center">43(+?)</td>
+<td class="center">43(+?)</td>
+<td class="center">42(+?)</td>
+<td class="center">128</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">160</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8 Shop</span></td>
+</tr>
+
+<tr id="Skycall"
+class="rare"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9 Shop">
+<td><img src="/question.png" alt=""></td>
+<td>Rare</td>
+<td>Skycall</td>
+<td class="center">57()</td>
+<td class="center">57()</td>
+<td class="center">57()</td>
+<td class="center">171</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">213</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9 Shop</span></td>
+</tr>
+
+<tr id="Orion"
+class="epic"
+data-raw-tier="1"
+data-raw-weapon-type=""
+data-raw-zone="Z1 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRFAAAAAIjO1gCh7PfvAGyooQB53ebfn///AJ/qAE5/cQBRAMr/qqqd5qgGuQAAAAF0Uk5TAEDm2GYAAAA+SURBVAjXY2Bg4DnAAAGHc6CMYzAGXAob2N0CobnLd0xAY+yugDBYOhohDIaZM8EU1wKo5kVRUMZSGAMiBQCA1hC5jftZIQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Orion</td>
+<td class="center">7(+2,+2)</td>
+<td class="center">7(+2,+1)</td>
+<td class="center">7(+2,+2)</td>
+<td class="center">21</td>
+
+<td class="center">21</td>
+
+<td class="center">27</td>
+
+<td class="center">32</td>
+
+<td class="center"></td>
+
+<td class="center">32</td>
+
+<td class="center"><span>1</span></td>
+<td><span>Z1 Shop</span></td>
+</tr>
+
+<tr id="HighbornCrest"
+class="epic"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Booster Pack">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADxQTFRFAAAABIzJJVuJGkZtAJLRvUdGpD080tPJFXOpODg+3ldW8MhV6uvlkTU0moRCU1ZbyMm/ra6n3+DVLi4y4/IMiAAAAAF0Uk5TAEDm2GYAAABQSURBVBjTnY5BEoAgDAOrIlJaK7T//6twgeqRvWUnmQnAGoZPA23kO55Zr1JtCOlCnIiUlXzjP6lFOaT9cII40BRg0hti8wgqb8k+1xqwygt+kwRwu/eOmAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Highborn Crest</td>
+<td class="center">10(+2,+3,+3)</td>
+<td class="center">5(+2,+2,+2)</td>
+<td class="center">7(+3,+3,+2)</td>
+<td class="center">22</td>
+
+<td class="center">29</td>
+
+<td class="center">37</td>
+
+<td class="center">44</td>
+
+<td class="center"></td>
+
+<td class="center">44</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Booster Pack</span></td>
+</tr>
+
+<tr id="DarkTower"
+class="epic"
+data-raw-tier="2"
+data-raw-weapon-type=""
+data-raw-zone="Z2 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAgYF3kZGHMzY4IyQmvr6vn5+SKCosLjEzFBUVXp6B6QAAAAF0Uk5TAEDm2GYAAAA8SURBVAjXY2BAgJlAAKI5K8IsSiaAGO1h7S0gBsMMqAjD9LDOKRMgaixZUNQgdKmGJSmiinSiq4HbhQ4Aj0IcmeqHG5IAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Dark Tower</td>
+<td class="center">10(+2,+3)</td>
+<td class="center">9(+3,+2)</td>
+<td class="center">10(+3,+2)</td>
+<td class="center">29</td>
+
+<td class="center">29</td>
+
+<td class="center">37</td>
+
+<td class="center">44</td>
+
+<td class="center"></td>
+
+<td class="center">44</td>
+
+<td class="center"><span>2</span></td>
+<td><span>Z2 Shop</span></td>
+</tr>
+
+<tr id="KingsCrest"
+class="epic"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="Z3 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAC1QTFRFAAAAYwAAnoEw0qtDkQAAxsa3qqqbeAAAxAAA3d3LZlEhlngzxKA96r5GiWwsk56k1gAAAAF0Uk5TAEDm2GYAAACDSURBVAjXY+BjAIMHDG8fMNx4wMB3j4HnAQMzkHuA4e25B28f8N0Bity9d/ns3bNAkTNvbU6tAYncrnvzNAskcrqke2YWUITvdm333KyzDxgYXoNEzgHN5C7pnpoFNn333lULQDR37OxeObDI09ktCiD6zrnZQm8uABkHNrx7cGADAwCsaj9ONYSzqwAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Kings Crest</td>
+<td class="center">13(+4,+3)</td>
+<td class="center">13(+3,+4)</td>
+<td class="center">14(+3,+3)</td>
+<td class="center">40</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center">60</td>
+
+<td class="center"></td>
+
+<td class="center">60</td>
+
+<td class="center"><span>3</span></td>
+<td><span>Z3 Shop</span></td>
+</tr>
+
+<tr id="RoboticAssitArm"
+class="epic"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Z4 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABJQTFRFAAAAYDkTOyMNinofzbg9aVwUukxuKgAAAAF0Uk5TAEDm2GYAAAAjSURBVAjXY2AgDbA6B2AwTKEMEyOoohARqByTK0xfAJHmAwDw5wNoJcPPrwAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Robotic Assit Arm</td>
+<td class="center">18(+5,+4)</td>
+<td class="center">17(+5,+4)</td>
+<td class="center">18(+4,+5)</td>
+<td class="center">53</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center">80</td>
+
+<td class="center"></td>
+
+<td class="center">80</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Z4 Shop</span></td>
+</tr>
+
+<tr id="Celestia"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="Z5 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAxQTFRFAAAAScOictvNG8KlEC56OgAAAAF0Uk5TAEDm2GYAAAAiSURBVAjXY2DAChzgLJ4DQOwDZPC9ABErQMQaIMFcgFUjAJm7BD4+JzvxAAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Celestia</td>
+<td class="center">24(+6,+6)</td>
+<td class="center">24(+6,+6)</td>
+<td class="center">24(+6,+6)</td>
+<td class="center">72</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>Z5 Shop</span></td>
+</tr>
+
+<tr id="Backbane"
+class="epic"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="Z6 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACFQTFRFAAAAcnR9KSswHh8iWUsUjS971UaJwcLHTU5TLi8xGBka9bjTcwAAAAF0Uk5TAEDm2GYAAAAySURBVAjXY2AgD3DOnDkDzJheUd4YrGTCwFnR1bEiatUShlmrgCABqoyVDaYBk4EVAABMTQwgzsz3zAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Backbane</td>
+<td class="center">32(+8,+8)</td>
+<td class="center">32(+8,+8)</td>
+<td class="center">32(+8,+8)</td>
+<td class="center">96</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center">144</td>
+
+<td class="center"></td>
+
+<td class="center">144</td>
+
+<td class="center"><span>6</span></td>
+<td><span>Z6 Shop</span></td>
+</tr>
+
+<tr id="Jubei&#39;sPromise"
+class="epic"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="Z7 Shop">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAADBQTFRFAAAA2NrK/9dP58ROz6ot/+63GxscMjM1Kys4Hh4mHCAheYuRLTQ26uztFBcYxMvOOmYJ0gAAAAF0Uk5TAEDm2GYAAAA8SURBVAjXY2AgCTAxvAMBBgZWhjWr9qzaw9DYWv7/zO4zuxlmTk77e/7/+f8MDCwMf+8CAYjxHwRIsgAACM4dT+eAnCIAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Jubei&#39;s Promise</td>
+<td class="center">43(+11,+10)</td>
+<td class="center">42(+11,+11)</td>
+<td class="center">43(+10,+11)</td>
+<td class="center">128</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center">192</td>
+
+<td class="center"></td>
+
+<td class="center">192</td>
+
+<td class="center"><span>7</span></td>
+<td><span>Z7 Shop</span></td>
+</tr>
+
+<tr id="MysteriousClutch"
+class="epic"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="Z8 Shop">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Epic</td>
+<td>Mysterious Clutch</td>
+<td class="center">57(+?,+?)</td>
+<td class="center">57(+?,+?)</td>
+<td class="center">57(+?,+?)</td>
+<td class="center">171</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center">256</td>
+
+<td class="center"></td>
+
+<td class="center">256</td>
+
+<td class="center"><span>8</span></td>
+<td><span>Z8 Shop</span></td>
+</tr>
+
+<tr id="Accuraglow"
+class="epic"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="Z9 Shop">
+<td><img src="/question.png" alt=""></td>
+<td>Epic</td>
+<td>Accuraglow</td>
+<td class="center">76()</td>
+<td class="center">76()</td>
+<td class="center">77()</td>
+<td class="center">229</td>
+
+<td class="center">229</td>
+
+<td class="center">287</td>
+
+<td class="center">344</td>
+
+<td class="center"></td>
+
+<td class="center">344</td>
+
+<td class="center"><span>9</span></td>
+<td><span>Z9 Shop</span></td>
+</tr>
+
+<tr id="StoneBlock"
+class="rare"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="T3 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRFAAAAaGpvamxyLzAyVlhdmJqhODk8rK2ydnh+X2FmjpCWOzw/Kywus9mr1AAAAAF0Uk5TAEDm2GYAAABpSURBVAjXY2DgOb17954DDAwMJ6vLywvPABmnd+9aNScHJLJ096oeMGN3+S4w43Toqmow48SqVcv32ICkVgIZc0CMVauWnsyBMLohjBUdWyGM7t0Re8CMraFNEMYWF28fkKU8Z4CAAQEAqPI2zUGNVCkAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Stone Block</td>
+<td class="center">4(+1,2)</td>
+<td class="center">12(+3,+3)</td>
+<td class="center">6(+3,+3)</td>
+<td class="center">22</td>
+
+<td class="center">39</td>
+
+<td class="center">37</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">37</td>
+
+<td class="center"><span>3</span></td>
+<td><span>T3 World Boss</span></td>
+</tr>
+
+<tr id="MithrilBlade"
+class="rare"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="T3 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAANTMzGRYWr7S3cnuAR0xPy87QjpaaPCoUPgAAAAF0Uk5TAEDm2GYAAAA9SURBVAjXY2AgEjDDGAYoDDYgLgMxkgsFBYvT0tIYXJyUlNzLy8sZWICi7qGhoWDFrjBdDjBGAIzBimwNANyeCBWHN5UtAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Mithril Blade</td>
+<td class="center">8(+4,+3)</td>
+<td class="center">2(+1,+1)</td>
+<td class="center">12(+2,+4)</td>
+<td class="center">22</td>
+
+<td class="center">39</td>
+
+<td class="center">37</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">37</td>
+
+<td class="center"><span>3</span></td>
+<td><span>T3 World Boss</span></td>
+</tr>
+
+<tr id="ProphecyOrbs"
+class="rare"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADNQTFRFAAAAsPnwsNT5AKpjA9fHAIWqA2DX+bDk1wONTf/kTan/qQCq/03P////KX1wKVV9fSlnSu1HMwAAAAF0Uk5TAEDm2GYAAABYSURBVBjTlY1JEoAgDASjoiySyfz/tYIreNK+dVcWkW+YvVyT9T4uXbG02GxC8inFg+bM5ihVfbgKIMLsPdcjQCNKCDwDdHB7Wa+B6DDVpfsLYvUWQH6wARk1BAlze0fLAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Prophecy Orbs</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">12(+4,+4)</td>
+<td class="center">12(+4,+4)</td>
+<td class="center">30</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">50</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 World Boss</span></td>
+</tr>
+
+<tr id="BeastboneSpear"
+class="rare"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRFAAAAnTkAAPKLX0ccfnloAMqB3dWz+1kAAKBzY19Q///bjIZwqqOKxjU02gAAAAF0Uk5TAEDm2GYAAAA6SURBVAjXY2CgDBR19qQvLz0cziCTuSZr5VLnKAaeM6uOTTkxezcD95kzZ+Z0bAAq2rl7N0cDceYBAJAaE58kZNgBAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Beastbone Spear</td>
+<td class="center">10(+4,+4)</td>
+<td class="center">6(+2,+2)</td>
+<td class="center">14(+4,+4)</td>
+<td class="center">30</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">50</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 World Boss</span></td>
+</tr>
+
+<tr id="JadeHandWrap"
+class="rare"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="T5 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAAfzF9KxApViFSVTMiKRkBzsm2cEcwqqaWQCogSl+a9wAAAAF0Uk5TAEDm2GYAAAAiSURBVAjXY2AgEzAZGkFZ0z2hjPaSCRAGx4wACIMtjFRjARSGBB2wMnW5AAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Jade Hand Wrap</td>
+<td class="center">17(+6,+6)</td>
+<td class="center">6(+1,+2)</td>
+<td class="center">17(+6,+6)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">67</td>
+
+<td class="center"><span>5</span></td>
+<td><span>T5 World Boss</span></td>
+</tr>
+
+<tr id="LightPointer"
+class="rare"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="T5 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAGBQTFRF7Rwk7Rwk7Rwk7Rwk7Rwk7Rwk7Rwk7Rwk7Rwk7Rwk7Rwk7RwkAAAAwZjecTxlcJLcqEJrTmKsmpXdimew/jVDNzdfw1GDx2y0rIIA05rfK2/JGUBzV5DbJV6q3agFFzpo2hjxcwAAAA10Uk5Tf62uKjSAQDM/KW0QAH9k9+cAAABbSURBVBjTY+BBAwwUCXBzsnNyIwlws3ExcLFxAwVkZGRlpaRk+YV4JRm5OIECEtLyQCAtKCwpIs7KAhSQg2gR5RMQYwKrgIpwc3CxcnFwI1TwcDOj2kIVp0MAAPDZDPfwuFp0AAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Light Pointer</td>
+<td class="center">5(+0,+0)</td>
+<td class="center">30(+13,+14)</td>
+<td class="center">5(+0,+0)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">67</td>
+
+<td class="center"><span>5</span></td>
+<td><span>T5 World Boss</span></td>
+</tr>
+
+<tr id="Bindle"
+class="rare"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="T6 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACFQTFRFAAAAQFJMZAQRHyckzxIsHxQI1MiyQiwUn5R/rQwigggY7URS4wAAAAF0Uk5TAEDm2GYAAABBSURBVAjXY2AgCZQnlpeVZxgzeLI2h4a2dhgzzJrQAJFZtXIWVM00zwVgms3FYxGYwek2E8Jg85yxCKp6lQJ2CwAsRRBkyfryvgAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Bindle</td>
+<td class="center">22(+6,+6)</td>
+<td class="center">22(+6,+6)</td>
+<td class="center">10(+6,+6)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">90</td>
+
+<td class="center"><span>6</span></td>
+<td><span>T6 World Boss</span></td>
+</tr>
+
+<tr id="MailGrasps"
+class="rare"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="T6 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADZQTFRFAAAAFpWnYnCKeYqnprjY+txANCEGRi0IVTcLKiEY1LkkTTEKtZ8ktLCaPCYH09K9ZFcPLh0Fy/xhkQAAAAF0Uk5TAEDm2GYAAABVSURBVBjTpYxJDoAwDAMDtE33xP//LASp0N6QcE4Z2UP0MaVg/SP3mZTMfgEIIWDZaPVZ54aBpyHXoffXIdIaAbCNu0niGJPWqmk73GiQqkn34fiXE8mTA1vwpWnfAAAAAElFTkSuQmCC" alt=""></td>
+<td>Rare</td>
+<td>Mail Grasps</td>
+<td class="center">22(+6,+6)</td>
+<td class="center">10(+6,+6)</td>
+<td class="center">22(+6,+6)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">90</td>
+
+<td class="center"><span>6</span></td>
+<td><span>T6 World Boss</span></td>
+</tr>
+
+<tr id="WisenedClutch"
+class="rare"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="T7 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAC1QTFRFAAAA/9sn////uLKc1M64fWgAWYEkbp0vjcY/9u/X3LcAQSMXUlA+MR0HQV8aMCAgzgAAAAF0Uk5TAEDm2GYAAAA5SURBVAjXY2AgE3DdunULzLj37t27CyDGvtTQvA0gxrYqoTIwY3tHRzuYcXnmzClgNTxnzpzBaywA0NEU5l1HjlIAAAAASUVORK5CYII=" alt=""></td>
+<td>Rare</td>
+<td>Wisened Clutch</td>
+<td class="center">30(+10,+10)</td>
+<td class="center">12(+4,+4)</td>
+<td class="center">30(+10,+10)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">120</td>
+
+<td class="center"><span>7</span></td>
+<td><span>T7 World Boss</span></td>
+</tr>
+
+<tr id="DeflectiveDagger"
+class="rare"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="T7 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACFQTFRFAAAAAH3Ti3E5////vZpQ/OCm/slaNicYmKKp0NvjZGtvfqErKgAAAAF0Uk5TAEDm2GYAAAAySURBVAjXY2AgGySACM6ZM2cagNgzOjo6wstDzRhWAUF6uUsgWI0CA4MbVDlLAjGGAgDdfAszz3BggAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Rare</td>
+<td>Deflective Dagger</td>
+<td class="center">30(+10,+10)</td>
+<td class="center">30(+10,+10)</td>
+<td class="center">12(+4,+4)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center"></td>
+
+<td class="center"></td>
+
+<td class="center">120</td>
+
+<td class="center"><span>7</span></td>
+<td><span>T7 World Boss</span></td>
+</tr>
+
+<tr id="Night&#39;sEnd"
+class="epic"
+data-raw-tier="3"
+data-raw-weapon-type=""
+data-raw-zone="T3 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAAMyYRNTdIXWB7RkhdKSo4UlRsLS49IyQsMqgv9QAAAAF0Uk5TAEDm2GYAAABsSURBVAjXY2CAg/byBvbyAgYGjiKN1OAkDSCjwsws2D0CyOhwgzAkipzNMtQjBBg4ylWcNMqBIgwd5RWtHQ1ARpObWUYSiNEOVOwKYViEgRkcJe4RHUCaEaimzakRWardzVQoFKymvLAcqAYAYBAfbfPWnzMAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Night&#39;s End</td>
+<td class="center">10(+20,+10,+10)</td>
+<td class="center">10(-5,+0,+0)</td>
+<td class="center">10(-5,+0,+0)</td>
+<td class="center">30</td>
+
+<td class="center">40</td>
+
+<td class="center">50</td>
+
+<td class="center">60</td>
+
+<td class="center"></td>
+
+<td class="center">60</td>
+
+<td class="center"><span>3</span></td>
+<td><span>T3 World Boss</span></td>
+</tr>
+
+<tr id="RegulatingRoboticContrivance"
+class="epic"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAAAF9lAJGaQS8ABM/eXC4A5805//FgXFEUHIN/CAAAAAF0Uk5TAEDm2GYAAAAjSURBVAjXY2AgEag4QGjGsgAIg6M0A8JgNq+AquloYCAXAAAXsgPLVOSmEAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Regulating Robotic Contrivance</td>
+<td class="center">14(+29,+12,+11)</td>
+<td class="center">12(-6,+1,+1)</td>
+<td class="center">14(-8,+1,+1)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center">80</td>
+
+<td class="center"></td>
+
+<td class="center">80</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 World Boss</span></td>
+</tr>
+
+<tr id="GlintingSabre"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="T5 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAA//OkMygDiUsQRycJ4sdi///TrJc8//OQ////vapWVEkVmjef2wAAAAF0Uk5TAEDm2GYAAAAwSURBVAjXY2AgCQTAGLNWgQGD8YzMGR2ZHZkMLmIzy8uml01nYIjeDQYMDAoMpAMAwR0Q9vIR8LIAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Glinting Sabre</td>
+<td class="center">20(+32,+18,+18)</td>
+<td class="center">14(-4,+0,+0)</td>
+<td class="center">20(-10,+0,+0)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>T5 World Boss</span></td>
+</tr>
+
+<tr id="Protector&#39;sKnapsack"
+class="epic"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="T6 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAA3s6gOkFMJRQENiEWGx4j9eOxEhQXHSAmKzA4lxZM+AAAAAF0Uk5TAEDm2GYAAABbSURBVAjXY2AAgZkTwBQDR0cnhNHBwAlhNMAYBQwME/AxEhKgjLRERvGKjo4GBhcXF+PISUoaQBFj40glTQ2GlBQX58iZM2cwCACFQkNDIxiA2tjLy8sLGGAAAKp3GKA3j29JAAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Protector&#39;s Knapsack</td>
+<td class="center">24(+52,+24,+24)</td>
+<td class="center">24(-14,+0,+0)</td>
+<td class="center">24(-14,+0,+0)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center">144</td>
+
+<td class="center"></td>
+
+<td class="center">144</td>
+
+<td class="center"><span>6</span></td>
+<td><span>T6 World Boss</span></td>
+</tr>
+
+<tr id="FlightCalibrator"
+class="epic"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="T7 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAA5f5Qal0JgJYAanwA///brssCXS0Ay6w3jYqi0wAAAAF0Uk5TAEDm2GYAAAAfSURBVAjXY2AgG6RAKDYxEwiDI7wJKtNaAVPDTqqhALAeAppcjqaOAAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Flight Calibrator</td>
+<td class="center">12(+88,+28,+28)</td>
+<td class="center">12(+2,+2,+2)</td>
+<td class="center">72(-58,+2,+2)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center">192</td>
+
+<td class="center"></td>
+
+<td class="center">192</td>
+
+<td class="center"><span>7</span></td>
+<td><span>T7 World Boss</span></td>
+</tr>
+
+<tr id="HexingChuk"
+class="epic"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="T8 World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAABklBMVEUAAAB0DS5yDS1zDS1YXGRXW2NXXGQqBRAnBxEVERQSExUqBRApBRAoBQ8pBRAqBRAqBBAqBA8nBhAUERQRExUSExUoBQ9CCBp0DS50DS50DS5kCSZyDS1yDS1zDS1vDCtyDS1yDS1yDS1zDS1vDCxUBh9cByJHS1JUWGBYXGRzDC1wFjNbVV9HTFNSFitXUlxYXGRYXGRYXGRyDCxvFTNbUl1WUlxXVl9XXGRXW2NXW2NYXGRXXGRXXGRXXGRXXGRXXGROCR9GBxo9BRY4BRUyBRMzBhM8BRY0BRQzBRMyBxQoExsmFR0lFh0bGx8mFBwvDRkdGh4aHB9VBh9WBh9MBhxBBxk/BhhIBRtQBR08CRk5Dh0qICcnIigmIyglJys6GSZMDSItKC4pKzBuDCtvDCtpCylSBh5PBRxOBRw+BBY4Gyg4LjdJDSFCCBs4DhwzMDc1Mzo6NT1PUVlSVV1RVV1fDShNLDs/NT45MjteDShVBh5GDB9GQktGSlE+NkBqGjVhEStUV19ZU11YUlz///+YlADwAAAAQXRSTlMAAAAAAAAAHBwcHOjm4+Pj4+Pj4+Pjf8Bx6OPxDhwXjUCCf39/fb/xjX9y6OPx/OblyhkOHBfmNRoZA0CCf4ByDu7XwK0AAAABYktHRIUV12rnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4wYGFRs6g/gaQwAAAAFvck5UAc+id5oAAAC6SURBVCjPY2AYJoAdHXBwcoEAAzcPLy8fEPDzgzC/gKCQsIiIqKgog5i4o6OTs7OLq5uLu4enl7ePr59/QGBQEAOjhKSUdHBIaFh4RGR4VHRMbFx8QmJScjIDk4ysnHxKakpaekZmVnZObl5+QWFRcUkpyH4mBUUlZRVVtbLyisqq6praOnUNTU2E85i1tHV06xsa9fQNDI1YkNzNZGxiqtHU3GJmbmFpxYrqJxZrG1s7ewe2gQ5bMgAAhdEmQVOccCcAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDYtMDZUMjE6Mjc6NTgrMDA6MDDnGIBrAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA2LTA2VDIxOjI3OjU4KzAwOjAwlkU41wAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAA0OIdghy0AAAAWdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgANDh/z0egAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE1NTk4NTY0Nzihsez5AAAADnRFWHRUaHVtYjo6U2l6ZQAwQslvGO0AAAA2dEVYdFRodW1iOjpVUkkAZmlsZTovLy90bXAvdGh1bWJsci9pbWcxMDQzOTI5MzE4Mzc3MjIzNzUxNlfjNYQAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Hexing Chuk</td>
+<td class="center">16(+117,+38,+37)</td>
+<td class="center">16(+3,+2,+3)</td>
+<td class="center">96(-77,+2,+3)</td>
+<td class="center">128</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center">256</td>
+
+<td class="center"></td>
+
+<td class="center">256</td>
+
+<td class="center"><span>8</span></td>
+<td><span>T8 World Boss</span></td>
+</tr>
+
+<tr id="Tempestwake"
+class="epic"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="T9 World Boss">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Epic</td>
+<td>Tempestwake</td>
+<td class="center">22(+157,+52,+49)</td>
+<td class="center">22(+3,+3,+4)</td>
+<td class="center">128(-103,+3,+4)</td>
+<td class="center">172</td>
+
+<td class="center">229</td>
+
+<td class="center">287</td>
+
+<td class="center">344</td>
+
+<td class="center"></td>
+
+<td class="center">344</td>
+
+<td class="center"><span>9</span></td>
+<td><span>T9 World Boss</span></td>
+</tr>
+
+<tr id="Dimensio"
+class="epic"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="T10 World Boss">
+<td><img src="/question.png" alt=""></td>
+<td>Epic</td>
+<td>Dimensio</td>
+<td class="center">29(+210,+70,+65)</td>
+<td class="center">29(+5,+3,+6)</td>
+<td class="center">172(-138,+3,+6)</td>
+<td class="center">230</td>
+
+<td class="center">307</td>
+
+<td class="center">306</td>
+
+<td class="center">307</td>
+
+<td class="center"></td>
+
+<td class="center">307</td>
+
+<td class="center"><span>10</span></td>
+<td><span>T10 World Boss</span></td>
+</tr>
+
+<tr id="Corruption"
+class="legendary"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 Orlag Clan World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACpQTFRFAAAALSYfICEnQDYtGBkdQEA7FBMYGxwhhIR6n5+SaWliuLipJiAZKisyWYy+xwAAAAF0Uk5TAEDm2GYAAABISURBVAjXY2DgOWxsLHOAgYHhWJLSjKUxDAw86bp3d3YtPUAiI6pz990SN7wMhlMghg/QLh4QA2Qpw8ndd2tANAOzsbEBAwMAY1g4WURF6qAAAAAASUVORK5CYII=" alt=""></td>
+<td>Legendary</td>
+<td>Corruption</td>
+<td class="center">20(+27,+16,+17.+17)</td>
+<td class="center">10(+0,+0,+0,+0)</td>
+<td class="center">20(-10,+0,+0,+0)</td>
+<td class="center">50</td>
+
+<td class="center">67</td>
+
+<td class="center">83</td>
+
+<td class="center">100</td>
+
+<td class="center">117</td>
+
+<td class="center">117</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 Orlag Clan World Boss</span></td>
+</tr>
+
+<tr id="Barrage"
+class="legendary"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="T5 Orlag Clan World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADlQTFRFAAAAGxkdLS4wFxUYJCImHB0fKCYqLSsvExEVGRgbFBQVGhgbEQ8TJSMoNzU6FRMWHhwgPTtBMS80OHWsVQAAAAF0Uk5TAEDm2GYAAABzSURBVBjTZc9bDsQgCAVQ5tHWFpQL+1/soGLaZPgw15MAgei/mFfS0t8T+HyPI1LZLhlQ3ZuBSPCEhpJAqgPcE3gznVBlAqqpDcACD7mBOIZqVIBSQrSY6Q3936JvAdvYEiM0j3knyDoK6C0veVyMfcdMP5oCCRjhw9lZAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Barrage</td>
+<td class="center">24(+37,+12,+13,+13)</td>
+<td class="center">20(-5,+5,+5,+5)</td>
+<td class="center">24(-9,+5,+5,+5)</td>
+<td class="center">68</td>
+
+<td class="center">91</td>
+
+<td class="center">113</td>
+
+<td class="center">136</td>
+
+<td class="center">159</td>
+
+<td class="center">159</td>
+
+<td class="center"><span>5</span></td>
+<td><span>T5 Orlag Clan World Boss</span></td>
+</tr>
+
+<tr id="NecromCrux"
+class="legendary"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="T6 Orlag Clan World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAxQTFRFAAAANDdDIiQtFBYaaneO0wAAAAF0Uk5TAEDm2GYAAAAtSURBVAjXY2DAAlg4gASHApDgLAAS3D+jVjEw/f//n4GLB8hdrQNSY8CAFQAABhcG0k4UEOoAAAAASUVORK5CYII=" alt=""></td>
+<td>Legendary</td>
+<td>Necrom Crux</td>
+<td class="center">30(+70,+30,+30,+30)</td>
+<td class="center">30(-20,+0,+0,+0)</td>
+<td class="center">30(-20,+0,+0,+0)</td>
+<td class="center">90</td>
+
+<td class="center">120</td>
+
+<td class="center">150</td>
+
+<td class="center">180</td>
+
+<td class="center">210</td>
+
+<td class="center">210</td>
+
+<td class="center"><span>6</span></td>
+<td><span>T6 Orlag Clan World Boss</span></td>
+</tr>
+
+<tr id="Ability"
+class="legendary"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="T7 Orlag Clan World Boss">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAJ9QTFRFUP/XUP/XUP/XUP/XUP/XUP/XUP/XUP/XUP/XUP/XUP/XAAAAX86PYsOAT7+optVU0/uETnp2TV1girpP293nTU5Vv8kuI+TTC6qcJOXT8/pvAlROTmxrCqiaTVpeIOLTJYN2T7KeTo+E0t/mxOPkTVdcTVRaTWdnI+DT//poAVJME05FNaiYW//j////enYPx+LluObjqOnhBaKWysQe+IeFtQAAAAx0Uk5TK0tdQCQRkA0JowMAJVshUAAAAJhJREFUGNN9j9cOwjAQBC/N9tn03kkP6S75/28jCIgQEszjaHW3C+IL+CU42+48xgfBqZxNlUv5S3Aah+NRoIHyp2AyRKxwol0GoutuJpoTbGofA+VBl+fNamFhVddVics9tH1iHTkE/aZEos4g2taYVNqIJaLO2ONoURyT2CZI9On9RfBEOpbKhh69SQ+by0fTnqv5P27gDrymEn0eoFiHAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Ability</td>
+<td class="center">12(+120,+36,+36,+36)</td>
+<td class="center">12(+2,+2,+2,+2)</td>
+<td class="center">96(-82,+2,+2,+2)</td>
+<td class="center">120</td>
+
+<td class="center">160</td>
+
+<td class="center">200</td>
+
+<td class="center">240</td>
+
+<td class="center">280</td>
+
+<td class="center">280</td>
+
+<td class="center"><span>7</span></td>
+<td><span>T7 Orlag Clan World Boss</span></td>
+</tr>
+
+<tr id="Stormbreaker"
+class="legendary"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="T10 Melvin Factory World Boss">
+<td><img src="/question.png" alt=""></td>
+<td>Legendary</td>
+<td>Stormbreaker</td>
+<td class="center">29(+285,+92,+84)</td>
+<td class="center">29(+6,+2,+6)</td>
+<td class="center">230(-195,+2,+6)</td>
+<td class="center">288</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center"></td>
+
+<td class="center">384</td>
+
+<td class="center"><span>10</span></td>
+<td><span>T10 Melvin Factory World Boss</span></td>
+</tr>
+
+<tr id="Valinor"
+class="epic"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACFQTFRFAAAA0MYR+PBc5twq//qhOTQ9UUxUR0ZOtKsIgnsAJiMqR4ZBuwAAAAF0Uk5TAEDm2GYAAABYSURBVAjXY2DABlwsIDTLqlUNYNqrLH3FBCDDarlSW9QKEKMsqa10JYgxSbGjE8TomtYkWQkWKVPsDAWLlCWKg9UwLzeNjAJpZ/BKAwuATZ4AscOjE9lmACtNGxT4qgfgAAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Valinor</td>
+<td class="center">5(+36,+12,+11)</td>
+<td class="center">30(-24,+1,+1)</td>
+<td class="center">5(+1,+1,+1)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center">80</td>
+
+<td class="center"></td>
+
+<td class="center">80</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="DivineWall"
+class="epic"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACpQTFRFAAAAgApMlx1hspAacgpEbFUOThwAqCtxRwYqxJ4fMBMAkXMPZikA78QuQJ9HcgAAAAF0Uk5TAEDm2GYAAABfSURBVAjXY2DABDxnzhxLSwAyzt6dO9s6DMTQLSzZsQvEUL9r3REFZJxUvzzRA8K4uQUswnP97pbuBSDG9JtbWhdARHaDGQxnS0qswEafvHm5C2LH3K0LILYdS0O2GwDI6iXkl4bN6QAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Divine Wall</td>
+<td class="center">15(+6,+6,+5)</td>
+<td class="center">10(+1,+2,+3)</td>
+<td class="center">15(+6,+6,+5)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center">80</td>
+
+<td class="center"></td>
+
+<td class="center">80</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Natalia&#39;sChoker"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="T5 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAAOj9HjJaeMTZANSQWRTEeKh4UHB4iuyUhvAAAAAF0Uk5TAEDm2GYAAAAuSURBVAjXY2AgAFgSoAxXKIMlDJeAYmoBmGYPZzcHM4oLQAgoAOSyg+UKCFkHAMOqBuCxRGL8AAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Natalia&#39;s Choker</td>
+<td class="center">26(+16,+16,+16)</td>
+<td class="center">14(+1,+1,+1)</td>
+<td class="center">14(+1,+1,+1)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>T5 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Reloader"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="T5 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABhQTFRFAAAAMzc8IiQnq6afOz9GLB8RHhYNISMnBrWmrAAAAAF0Uk5TAEDm2GYAAAApSURBVAjXY2AgDbClpaeDGamhIeEOIIaxeXp6OZBmd1SHqilKZyAbAADPgwXXj+PYsQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Reloader</td>
+<td class="center">34(+14,+14,+14)</td>
+<td class="center">10(+2,+2,+2)</td>
+<td class="center">10(+2,+2,+2)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>T5 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="ChronometricToolkit"
+class="epic"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="T6 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAZm2AMTlNXDgYNR8JdY6OlsTEbEEbTjAUQktNJRQENiENK6xX5gAAAAF0Uk5TAEDm2GYAAABQSURBVAjXY2BABrs3QGhuIASDDWgMtsxtE8CM1AkQBlvkzK0TgLIMrAGcG8AMBgau3bshBi1pLy+HMJoly7sgDCUow6OjA8zgWrV79yqECwBzVhvS6tUepQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Chronometric Toolkit</td>
+<td class="center">20(+40,+18,+18)</td>
+<td class="center">10(+2,+2,+2)</td>
+<td class="center">42(-18,+4,+4)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center">144</td>
+
+<td class="center"></td>
+
+<td class="center">144</td>
+
+<td class="center"><span>6</span></td>
+<td><span>T6 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="DragonNunchaku"
+class="epic"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="T6 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAApZMxkoIobmEYHBwhLi020b9dyvP3TwAAAAF0Uk5TAEDm2GYAAAA1SURBVAjXY2AgBaSmhoWGhSYAGSA6JS2BwcTF2MTFQEAAqkBNAcpghGlJToAy4GqUFPDYAACW2whFkKJiRQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Dragon Nunchaku</td>
+<td class="center">15(+51,+24,+24)</td>
+<td class="center">15(+0,+0,+0)</td>
+<td class="center">42(-27,+0,+0)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center">144</td>
+
+<td class="center"></td>
+
+<td class="center">144</td>
+
+<td class="center"><span>6</span></td>
+<td><span>T6 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Deflection"
+class="epic"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="T7 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADNQTFRFAAAAr4cAtIgADFhfU9PfL5afZ25zuYgAipKXkmoA0Nvja0sA9cAArbe9/////9g+7fL3SA+F1wAAAAF0Uk5TAEDm2GYAAABySURBVBjTbY9RDoUwCATrs3217cJy/9OK1loT5YNkJ0OAED5qAb0TufRczJSkmkk7chMHSj3Av52Al4EBXoYDRNwgFBg0Ju+59S2CGDWtkG2AiuS5PoBhpU3A6nvVKh6G3zGN8LsMKeM7dJDnv/AR9LwDTMAIEbI/Nr4AAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Deflection</td>
+<td class="center">15(+83,+32,+32)</td>
+<td class="center">15(+0,+0,+0)</td>
+<td class="center">66(-51,+0,+0)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center">192</td>
+
+<td class="center"></td>
+
+<td class="center">192</td>
+
+<td class="center"><span>7</span></td>
+<td><span>T7 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Captain&#39;sTower"
+class="epic"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="T7 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAADBQTFRFAAAAMjJJPDxYb2x7////u58858VPa1ochW8eHBwmVT0l+uKDIyMxRTIfbEwtflgyXmsiAgAAAAF0Uk5TAEDm2GYAAAB0SURBVAjXY2BgVDY2UjzAwMBwNGzLtrBIBgae3nVP/r26PoGBp23dl3+vQYyee7//vQExetd9+Q+W6r33G8Jozd6yOzscLPX6/Su4mkqggSfuffm/FsL4DWVc+/0bwrizes3VCUAGY9hu70QGEAA6Q4GBAQAFL0N9xUf0EwAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Captain&#39;s Tower</td>
+<td class="center">24(+62,+26,+26)</td>
+<td class="center">12(+2,+2,+2)</td>
+<td class="center">60(-32,+4,+4)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center">192</td>
+
+<td class="center"></td>
+
+<td class="center">192</td>
+
+<td class="center"><span>7</span></td>
+<td><span>T7 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="ForceofSent"
+class="epic"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="T8 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Epic</td>
+<td>Force of Sent</td>
+<td class="center">20(+111,+42,+43)</td>
+<td class="center">20(+0,+0,+0)</td>
+<td class="center">88(-68,+0,+0)</td>
+<td class="center">128</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center">256</td>
+
+<td class="center"></td>
+
+<td class="center">256</td>
+
+<td class="center"><span>8</span></td>
+<td><span>T8 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Lightdrain"
+class="epic"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="T10 Trials &amp; Gauntlet">
+<td><img src="/question.png" alt=""></td>
+<td>Epic</td>
+<td>Lightdrain</td>
+<td class="center">36(+199,+76,+77)</td>
+<td class="center">36(+0,+0,+0)</td>
+<td class="center">158(-122,+0,+0)</td>
+<td class="center">230</td>
+
+<td class="center">307</td>
+
+<td class="center">306</td>
+
+<td class="center">307</td>
+
+<td class="center"></td>
+
+<td class="center">307</td>
+
+<td class="center"><span>10</span></td>
+<td><span>T10 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Gloomwall"
+class="epic"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="T10 Trials &amp; Gauntlet">
+<td><img src="/question.png" alt=""></td>
+<td>Epic</td>
+<td>Gloomwall</td>
+<td class="center">58(+148,+63,+61)</td>
+<td class="center">29(+5,+3,+6)</td>
+<td class="center">143(-76,+10,+10)</td>
+<td class="center">230</td>
+
+<td class="center">307</td>
+
+<td class="center">306</td>
+
+<td class="center">307</td>
+
+<td class="center"></td>
+
+<td class="center">307</td>
+
+<td class="center"><span>10</span></td>
+<td><span>T10 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="GoldenGauntlet"
+class="legendary"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAA9QTFRFAAAAJRomtKsI3tQXcWsAWnP7egAAAAF0Uk5TAEDm2GYAAAAlSURBVAjXY2AgEbC4QBnOKlABIyUBiICxoQlEhYuwA0w1qcYDAMo8AtZG/BVMAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Golden Gauntlet</td>
+<td class="center">5(+50,+14,+15,+15)</td>
+<td class="center">5(+1,+1,+1,+1)</td>
+<td class="center">40(-34,+1,+1,+1)</td>
+<td class="center">50</td>
+
+<td class="center">67</td>
+
+<td class="center">83</td>
+
+<td class="center">100</td>
+
+<td class="center">117</td>
+
+<td class="center">117</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="StormBarrier"
+class="legendary"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="Trials reward - &#39;Magi&#39;">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABJQTFRFAAAAI8L/pN7/x+v/MYH/I8L/Qw1yNgAAAAJ0Uk5TAE+Q8JE5AAAAVElEQVQI102OwQ2AUAhDe+ndJrCBKzgATgBx/11sNPl6onkUWhBgA42rOdk8QIyUJqCi5GlQYWSwa04jqibDYiKlqe0VqvxWNudjXufr4Yr4hb41bq8tELjcZNqfAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Storm Barrier</td>
+<td class="center">30(+13,+12,+13,+13)</td>
+<td class="center">10(+2,+2,+2,+2)</td>
+<td class="center">10(+2,+2,+2,+2)</td>
+<td class="center">50</td>
+
+<td class="center">67</td>
+
+<td class="center">83</td>
+
+<td class="center">100</td>
+
+<td class="center">117</td>
+
+<td class="center">117</td>
+
+<td class="center"><span>4</span></td>
+<td><span>Trials reward - &#39;Magi&#39;</span></td>
+</tr>
+
+<tr id="Blazeguard"
+class="legendary"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="T4 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAADBQTFRFAAAAHRkf/wAQ9wAQ5AALPzpBrwAA/wAkngAAExAV/wAXLykxPjhAIh0jUExSGhcciG8SrwAAAAF0Uk5TAEDm2GYAAAB2SURBVAjXY2Bg4GWAgvdQmu88EuMBkH7Ad46BA8R4znfu/y+Qsvd+5989ufuBgeHNj/eyl+5+4Gfg+/7mx9n/K24CNa37fnZX6E2gorxfZ7/enQBk5J7O+Q1icGWf3m91E2T0mzff9zaA7dhffRNi2/nuCwwMAJ1BN4YLNktZAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Blazeguard</td>
+<td class="center">22(+7,+7,+7,+7)</td>
+<td class="center">6(+3,+2,+3,+3)</td>
+<td class="center">22(+7,+7,+7,+7)</td>
+<td class="center">50</td>
+
+<td class="center">67</td>
+
+<td class="center">83</td>
+
+<td class="center">100</td>
+
+<td class="center">117</td>
+
+<td class="center">117</td>
+
+<td class="center"><span>4</span></td>
+<td><span>T4 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Doomguard"
+class="legendary"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="T5 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAB5QTFRFAAAASAYqLyM1bQk/OAMgMyc5jRFVJhwrPS5DHQ8j0Pg6qwAAAAF0Uk5TAEDm2GYAAAB9SURBVAjXXc0xCgIxFIThKQLWsjewMrUgpDbkBoG1XgmktJBsTqDpHkr0zW3dxc5p/q8bAJuG325/2HPuBUXAOvexPASWtVr2Bbm+r8cseKq2OiSCC7oORMiRLm4Vwe1eLjLCBKakdoS5HE5e4x0Ifjp/mgAmTUJZ37xf8wVWBSoympPALAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Legendary</td>
+<td>Doomguard</td>
+<td class="center">10(+57,+18,+19,+19)</td>
+<td class="center">10(+2,+2,+2,+2)</td>
+<td class="center">48(-36,+2,+2,+2)</td>
+<td class="center">68</td>
+
+<td class="center">91</td>
+
+<td class="center">113</td>
+
+<td class="center">136</td>
+
+<td class="center">159</td>
+
+<td class="center">159</td>
+
+<td class="center"><span>5</span></td>
+<td><span>T5 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Mercy"
+class="legendary"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="T6 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRFAAAALCUjUVVdOj1DGxwhJCYrNi0rGBkdZ2x1KisyICEnIRsZFBMYh/HSmwAAAAF0Uk5TAEDm2GYAAABdSURBVAjXY2BAgOOrlp8B0Twb0xJ3HwAyTi/tnOW+B8yYMcsczDCdoQwRWTQDKrWoAyq1dMZksAjP1hnK3gfADI1ZYAZD4QytPWAr2DNmH4BYtiwHaivXAiQnMAAA3wslGWc3basAAAAASUVORK5CYII=" alt=""></td>
+<td>Legendary</td>
+<td>Mercy</td>
+<td class="center">40(+15,+15,+15,+15)</td>
+<td class="center">10(+0,+0,+0,+0)</td>
+<td class="center">40(+15,+15,+15,+15)</td>
+<td class="center">90</td>
+
+<td class="center">120</td>
+
+<td class="center">150</td>
+
+<td class="center">180</td>
+
+<td class="center">210</td>
+
+<td class="center">210</td>
+
+<td class="center"><span>6</span></td>
+<td><span>T6 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="GloriousRespite"
+class="legendary"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="T7 Trials &amp; Gauntlet">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADlQTFRFAAAANIipOI+xFVRutqA+Vr3mDDtPSavRQKLJ/+RRGmB8KoarInOUj3sA7tVKppA1D0hfCS8///pV03gBDwAAAAF0Uk5TAEDm2GYAAACDSURBVBjTTc8JEsIgDAXQaLULkO3f/7D+plSFGSa8LAMitYBD/hfQ8YsrPHzeRM14Ok5hUsUUBucMJgwKgWnGwZx5pLLCkdEWY0vEShFxQh+8NwIrRDLQt30MnBVSkH177yMJckEraDdo3nB1cOoXfAIKMIFPmkNXq3+9uJfH8xlrhR8f+gmi3l6q6gAAAABJRU5ErkJggg==" alt=""></td>
+<td>Legendary</td>
+<td>Glorious Respite</td>
+<td class="center">52(+20,+20,+20,+20)</td>
+<td class="center">16(+56,+20,+20,+20)</td>
+<td class="center">52(-36,+0,+0,+0)</td>
+<td class="center">120</td>
+
+<td class="center">160</td>
+
+<td class="center">200</td>
+
+<td class="center">240</td>
+
+<td class="center">280</td>
+
+<td class="center">280</td>
+
+<td class="center"><span>7</span></td>
+<td><span>T7 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Bowlblock"
+class="legendary"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="T10 Trials &amp; Gauntlet">
+<td><img src="/question.png" alt=""></td>
+<td>Legendary</td>
+<td>Bowlblock</td>
+<td class="center">124(+49,+47,+48,+49)</td>
+<td class="center">40(+133,+47,+48,+49)</td>
+<td class="center">124(-86,+2,+0,-2)</td>
+<td class="center">288</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center"></td>
+
+<td class="center">384</td>
+
+<td class="center"><span>10</span></td>
+<td><span>T10 Trials &amp; Gauntlet</span></td>
+</tr>
+
+<tr id="Colossus"
+class="epic"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="R1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAAALzyAI+3Zd3/AHGUMjQ+Kyw1OTtHICEnC1jAWgAAAAF0Uk5TAEDm2GYAAABXSURBVAjXY2CAA44OIGgAMtrLy8tbM0CM0LJSCCMsNaKiA8joSE1rDa8AibQZe4SCpSoM3dPAjAgj9zAwI1zFIxWiPb0CYmAqkAWyoi2tDKwWYhcDFgAAu1wfaYIKZh0AAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Colossus</td>
+<td class="center">12(+13,+10,+9)</td>
+<td class="center">16(-2,+2,+2)</td>
+<td class="center">12(+2,+2,+2)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center">80</td>
+
+<td class="center"></td>
+
+<td class="center">80</td>
+
+<td class="center"><span>4</span></td>
+<td><span>R1</span></td>
+</tr>
+
+<tr id="Arcanot"
+class="epic"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="R1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAHJQTFRFwic0wiczwSczwiczwiczwiczwiczwiczwiczwiczwiczwiczwiczwiczwiczwiczwiczwiczwiczAAAApQ8T////pA4S3omQixkgkxsjshoiihkhow0RqhMZmx0mnx4nghcekwAsfhYdRggdwidhwiczuvNviAAAABR0Uk5TW1sTc2AGDTozAVYFEwlGNisaHQBldLbzAAAAg0lEQVQY042OyRKDIBBESRSRHcbscWP7/180WErKnDLHV2+6G3U/h/4E0R1BvMbAMacFuOiCBStkeQnBaKINNBuQ0Kr+xlQLcgVUGHVJw7NWRtAMuNV9uqfRM215BhjIY0ivaUYE8GYwP07vajdyRu3nqmSsLez0bem6Bo47Ps55X7oAF/YSHySn98kAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Arcanot</td>
+<td class="center">16(+6,+6,+5)</td>
+<td class="center">8(+1,+2,+3)</td>
+<td class="center">16(+6,+6,+5)</td>
+<td class="center">40</td>
+
+<td class="center">53</td>
+
+<td class="center">67</td>
+
+<td class="center">80</td>
+
+<td class="center"></td>
+
+<td class="center">80</td>
+
+<td class="center"><span>4</span></td>
+<td><span>R1</span></td>
+</tr>
+
+<tr id="GoldShanker"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="R2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFAAAAkHE3dVkkISMkNSgRFBUWMDM0UzrhxAAAAAF0Uk5TAEDm2GYAAAAtSURBVAjXY2AgANISoIzEAAjNogplJDtAaDZTqIrkADQB5RAIzSQCM82BkHUAb3sEihwKYDUAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Gold Shanker</td>
+<td class="center">18(+14,+14,+14)</td>
+<td class="center">18(+2,+2,+2)</td>
+<td class="center">18(+2,+2,+2)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>R2</span></td>
+</tr>
+
+<tr id="HolySpellBook"
+class="epic"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="R2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAA/+SZemIi89BwelMlUlA+qKWMjWQ1x6I9JhoLQy4UXkAcQx1lngAAAAF0Uk5TAEDm2GYAAABDSURBVAjXY2BAAjN3Q2hOBoYNRDC4URkcK1asADNW7969ewGIsUTDQgXCaBZuATOWl5eXgxnL0tLSwAzW0NBQJCcAAIu6FCsHxmX+AAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Holy Spell Book</td>
+<td class="center">22(+7,+7,+7)</td>
+<td class="center">10(+4,+4,+4)</td>
+<td class="center">22(+7,+7,+7)</td>
+<td class="center">54</td>
+
+<td class="center">72</td>
+
+<td class="center">90</td>
+
+<td class="center">108</td>
+
+<td class="center"></td>
+
+<td class="center">108</td>
+
+<td class="center"><span>5</span></td>
+<td><span>R2</span></td>
+</tr>
+
+<tr id="Nethersong"
+class="epic"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="R3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAADNQTFRFAAAAZmJUOiYTLBsKX4molI95PFRzOEZYdnNjJjdPzsyzFSY6iYZ1VEU5Ny4kGhMPJh4Ytzb0JwAAAAF0Uk5TAEDm2GYAAABoSURBVBjTdY5JEoAgDATjAiKEJP9/rYNxw9I5ANN0QYi+wn1dVwbKwbyOMS7KCZI5KRCSiuKoVhuYiFNiEVkOUAoNjFtEQf2hAB8xrA6yb6r1/HonZvUephGrcvVZX0KbQR5Crzugv2yOWgRlMqSBUQAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Nethersong</td>
+<td class="center">24(+20,+20,+20)</td>
+<td class="center">24(+2,+2,+2)</td>
+<td class="center">24(+2,+2,+2)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center">144</td>
+
+<td class="center"></td>
+
+<td class="center">144</td>
+
+<td class="center"><span>6</span></td>
+<td><span>R3</span></td>
+</tr>
+
+<tr id="GoldenGrasp"
+class="epic"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="R3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAYEYLLBwFqJZA5tdXzL5KQj4iX1kyWFItgXMv+e2DNjMc7I6hmQAAAAF0Uk5TAEDm2GYAAABISURBVAjXY2DABsq7N4Bp9qjIbhDNVbpk9goQY4l5xS5PkBxn69LZs8Fqdu/e3A3RxW01G6q/SwjKUPRKgDDYZ0IZbGkM+AAAxNoRNEbq35MAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Golden Grasp</td>
+<td class="center">29(+11,+11,+11)</td>
+<td class="center">14(+2,+2,+2)</td>
+<td class="center">29(+11,+11,+11)</td>
+<td class="center">72</td>
+
+<td class="center">96</td>
+
+<td class="center">120</td>
+
+<td class="center">144</td>
+
+<td class="center"></td>
+
+<td class="center">144</td>
+
+<td class="center"><span>6</span></td>
+<td><span>R3</span></td>
+</tr>
+
+<tr id="Romblock"
+class="epic"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="R4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAADBQTFRFAAAAdHxyf/8SKysvRUVMABOxkYd4DVz/cnJ8HGf/NDQ5ADCR5dnLADuxABUxGBgZ4K1YYgAAAAF0Uk5TAEDm2GYAAAB0SURBVAjXY2BABv///weS/P//5xxx+cDA8PHdu3dvmhYwMPy7e/fuvfMgxs+Z8/edADFulpfuywKq6btZc3Tf/w8gkeNH9/UDdevdPFO6bz2Qse7v3fsQqd27d+/rADLYgAY+XgVk8DB8tgDbxXAm/z+yCwDPmEFXCLMn3gAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Romblock</td>
+<td class="center">32(+36,+24,+24)</td>
+<td class="center">32(-2,+4,+4)</td>
+<td class="center">32(-2,+4,+4)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center">192</td>
+
+<td class="center"></td>
+
+<td class="center">192</td>
+
+<td class="center"><span>7</span></td>
+<td><span>R4</span></td>
+</tr>
+
+<tr id="SlabProtector"
+class="epic"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="R4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAODk8y7Ey3ctyVlhdiXciVUoVS1FdfoicmKW9Kywuw8zh+yB/QwAAAAF0Uk5TAEDm2GYAAABxSURBVAjXY2BAAPby8vKqBUDGit27d++oYghTXbGjsxzIMErO2jETxAhNBTJmAxlpaat2ztw9owqkeOdsCKNi5+6dEJHdu2fOAGvfvXMmULFxctZusC6g9t2VIMVA7Tu6d3SAFbu4uDhKARlcq4BgAQAYyDj0CvauPAAAAABJRU5ErkJggg==" alt=""></td>
+<td>Epic</td>
+<td>Slab Protector</td>
+<td class="center">40(+14,+14,+14)</td>
+<td class="center">16(+4,+4,+4)</td>
+<td class="center">40(+14,+14,+14)</td>
+<td class="center">96</td>
+
+<td class="center">128</td>
+
+<td class="center">160</td>
+
+<td class="center">192</td>
+
+<td class="center"></td>
+
+<td class="center">192</td>
+
+<td class="center"><span>7</span></td>
+<td><span>R4</span></td>
+</tr>
+
+<tr id="TwoSack"
+class="epic"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="R5">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Epic</td>
+<td>Two Sack</td>
+<td class="center">40(+38,+38,+38)</td>
+<td class="center">33(+6,+6,+6)</td>
+<td class="center">33(+6,+6,+6)</td>
+<td class="center">106</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center">256</td>
+
+<td class="center"></td>
+
+<td class="center">256</td>
+
+<td class="center"><span>8</span></td>
+<td><span>R5</span></td>
+</tr>
+
+<tr id="DimensionalTarge"
+class="epic"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="R5">
+<td><img src="data:image/png;base64,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" alt=""></td>
+<td>Epic</td>
+<td>Dimensional Targe</td>
+<td class="center">53(+19,+19,+19)</td>
+<td class="center">22(+5,+4,+7)</td>
+<td class="center">53(+19,+19,+18)</td>
+<td class="center">128</td>
+
+<td class="center">171</td>
+
+<td class="center">213</td>
+
+<td class="center">256</td>
+
+<td class="center"></td>
+
+<td class="center">256</td>
+
+<td class="center"><span>8</span></td>
+<td><span>R5</span></td>
+</tr>
+
+<tr id="Authority"
+class="epic"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="R6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA+VBMVEUAAACwurxpbW6XnJ1qbm+YnZ5nbHCAhYbszDvszTzIjBzQnjPPnTGwuryyvL6Mk5Vna2xpbW6Tl5ikrK2xu71wdXZucnNpbW6YnJ2boKKuuLqjrK5vdHhma2+AhIXBrUvvzjnszDtobG1ucnOOk5Tt0Ubtz0LszDptcXJtcnXz7Yzt0UbszDtnbHCdhVDXqT3y7Zb296PszDvIjBy8bgDu5IrQnjPQnjPSoznUqD/fuT3w0zzQnjPQnjPQnTLPnTHPnTGRmJquuLmEiYqgqKmYoKKQlY+nm1yChICBfGLiyUnv00aZhVbMo0Lv54v08pbt0Ufx6YsuTAjGTX2sAAAAQXRSTlMAAAAAAAAAAAAAAAAADnKBcg4MNebmNQxx6/z863GAwG8Ocev85jUMNeb863FygH97vn8CEIsZzvfnNQwOc4JyDhcI3c0AAAABYktHRFINYC2QAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4wYdFDU2B5Pl7QAAAAFvck5UAc+id5oAAAB+SURBVCjPY2AYkoCRl49fQJAJQ5xZSFjEUVRMnAVdglVCUspJWkaWDV2CXc7ZxdXNXV5BkQNVgklJWcXD08tbVU2dE0WCRVxD08fXz19LW4cTTYugrp6+gaF/gBEnujUMXMYmpoEYOoCA28zcwtLKGouEja2dvQPPQAc1eQAAoOEN/36qERgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDYtMjlUMjA6NTM6NTQrMDA6MDCHKHGeAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA2LTI5VDIwOjUzOjU0KzAwOjAw9nXJIgAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAA0OIdghy0AAAAWdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgANDh/z0egAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE1NjE4NDE2MzTSOOk1AAAADnRFWHRUaHVtYjo6U2l6ZQAwQslvGO0AAAA0dEVYdFRodW1iOjpVUkkAZmlsZTovLy90bXAvdGh1bWJsci9pbWc1ODIxODExNzEwNTg1MjMwNjDO+WSiAAAAAElFTkSuQmCC" alt=""></td>
+<td>Epic</td>
+<td>Authority</td>
+<td class="center">58(+63,+44,+41)</td>
+<td class="center">56(-2,+7,+8)</td>
+<td class="center">58(-4,+7,+8)</td>
+<td class="center">172</td>
+
+<td class="center">229</td>
+
+<td class="center">287</td>
+
+<td class="center">344</td>
+
+<td class="center"></td>
+
+<td class="center">344</td>
+
+<td class="center"><span>9</span></td>
+<td><span>R6</span></td>
+</tr>
+
+<tr id="Skully"
+class="epic"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="R6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QALgBMAAjw6daMAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4wcEFB0fCA3ijgAAAAFvck5UAc+id5oAAAWqSURBVEjHrZZbbJRFFMf/M/N9++23l+5ud7tliy4tWygKxUoBL0DlXi4RTDUEg6IJ6oMxijExIVFjjE++GY0JPmjUeIkmBsEUWi1YAohSLqKUS9lSurS73e62u937d5nxAamLVOMD8zSZOef8zsyc/8wQwUAgAHDc3kYBEIAIgHSvAA6uAJh5e2KbDFh5CHjoECABQPdDwFuv394FMF4GgJgcJ2U2Ygq/qcbIlL5/WUpTBnnpE4KD6+2zdZfVB1kpKkX4haR4hGS1U9gJQAXAsxy5qNDT3SSVxsoDebz7lPgHaArAW++QwJ7tspuh2phzftpYRdpbd3GBYUzPOGP+bKW7pPgoCBNEmFlFT5rj1nDDaX/fxJ7tQ1HviI43XsWtAFKW/Rc7bF4K/2oZG9uXdayJhM4tav1gVqRn9UXX8UdPeCuJjUogACEQkkDwUOjouj9WdHbp2Bf9fEccb7yaL48pAYBdBRxvf0BwoE1tZZX15uyxpo5Hj69PzRLzmNPnP7LmO6vr7gpLqzekqkRClBQwaKSRGrqEK45r90xs72VzutrSDfHAmY6lsctY923Brj4vJgFOLzCt8z5mSVZ7EBxt1GaOrO1fen6Z3afYK+kMnFra4Vp3Zws22FqRh4YecwRRLQ3L2DhKFYU7EvfHPRhaPsbsDjMYrk5qv9+nOdfCmATYVkEs/DoguQVC32/7clXirsE2tfJOZYmjDnOJG+/zowAnKMBEO6K4FOlBbiiMZxu3wqU4kTE12567T7XJZwe0ZS9ujKRTgaRtFXQARAIAVy2gcplaGXyEco+mFqw2SjBGdVyRdbhnzseQkcf+y504jxT8sGLB9EUYtlHIkgwXV4jh0K0WJjxWBp/GZeqqvX4GFAACACROKaNwSoZsvVFrV/UUeowY1JpajKKEE5Ee5CJ9mCF50Fz7IHqlHMLIIA8DQgBMY1bK4JQ4pYHyKuKTJQRxQ0yEUKSv9SE/chWCEawIPoCVLTshTI4LLId9GIQOgYvIoo9kUJQEXBKd9OflgDJllHUFrC4vLEWO7MfdSFg1nJ05imyLDxG1hCGRA6EESu8E5D9S0LIp8FgziKX1Vh0UAYjroQ1BhCAAhBBweANQRBX43q+RLoZxbvZJXCQzoTvl65lIFDWHR+DuiiI9kIFhY8As3AoYBlCihqkbSGpKMQciytbBoRkmNj2mYNPjKp57oRexqAFKAdXlwLZtCtbursAzW7MwC4Lc2AVaDsjtB4krWbME/zX/hYazNtMdyqw05mp60SJbKFpe2YZAk4SxGh1m8lPUz5uL4OK5OPfVARTkBuQbF2HJrnFofbOLpcPIGE7OozdtURg4Xt1vGFeCw1u+eviEOSfpPNy8vzovJnyaTCxNL7ZBMDtOxhIwajoR3LQEC57YiPDp3xDxNOGc5zGx8FlmFM6oqQvtSGjVOk8PXAewNwHScT/Q+XRYSJ6EljzTPF7Kq0MLTtTzEbPHHrGcrBlUKS5JWVytMCEemY/s4unod+rQNtyFdHMAA8VS0bYrdCSzx/PDT2n683BtX2Yx/VA0771RphwwG48h13iMh9tbJ+ThhqvsgvOgP1hHwHUyYumfl63JWtzqDN7QfW9mNBRXknUJy5xDTZnRUFyJzUjoqVF+Wh2U+sJV0ZSt8RczkywT2k2ts1mPtO4b/4wavzZ1be5q2bflR96fiJZiyTER1Ucbdocuu486Bs14aaRhd6jPc9QRKRQy0bQj/xsnGDCPBHLZ154XucK/XdcA9CffMw1TTse7N5+Uxn3Rdd+83MtURZGZwyjmlNGq7nphuVxFCjnF9HXX06YrXhPnff1xVkoSYb0p3ykffUqBpuXARy8MW6x6pRpkShURYFyAZy1GnmiUM51CsxuEaRRUozzGSnlTSRSX77xDSwz9/eiT//FtmRQF+a/Jf5r89W35E9Vgj+fsn+LlAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA3LTA0VDIwOjI5OjMxKzAwOjAwJ/KAMgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wNy0wNFQyMDoyOTozMSswMDowMFavOI4AAAAgdEVYdHNvZnR3YXJlAGh0dHBzOi8vaW1hZ2VtYWdpY2sub3JnvM8dnQAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABd0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQANDiHYIctAAAAFnRFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADQ4f89HoAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTYyMjcyMTcxBhci/gAAAA50RVh0VGh1bWI6OlNpemUAMELJbxjtAAAANXRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vdG1wL3RodW1ibHIvaW1nNjA4Njk3NDE2NDMxNTA4NDY2NzX1j5UAAAAASUVORK5CYII=" alt=""></td>
+<td>Epic</td>
+<td>Skully</td>
+<td class="center">71(+25,+27,+23)</td>
+<td class="center">30(+7,+4,+11)</td>
+<td class="center">71(+25,+27,+23)</td>
+<td class="center">172</td>
+
+<td class="center">229</td>
+
+<td class="center">287</td>
+
+<td class="center">344</td>
+
+<td class="center"></td>
+
+<td class="center">344</td>
+
+<td class="center"><span>9</span></td>
+<td><span>R6</span></td>
+</tr>
+
+<tr id="Pylonk"
+class="epic"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="R7">
+<td><img src="/question.png" alt=""></td>
+<td>Epic</td>
+<td>Pylonk</td>
+<td class="center">78(+85,+58,+55)</td>
+<td class="center">74(-2,+9,+11)</td>
+<td class="center">78(-5,+9,+11)</td>
+<td class="center">230</td>
+
+<td class="center">307</td>
+
+<td class="center">306</td>
+
+<td class="center">307</td>
+
+<td class="center"></td>
+
+<td class="center">307</td>
+
+<td class="center"><span>10</span></td>
+<td><span>R7</span></td>
+</tr>
+
+<tr id="Slagblock"
+class="epic"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="R7">
+<td><img src="/question.png" alt=""></td>
+<td>Epic</td>
+<td>Slagblock</td>
+<td class="center">95(+34,+35,+31)</td>
+<td class="center">40(+9,+6,+15)</td>
+<td class="center">95(+34,+35,+31)</td>
+<td class="center">230</td>
+
+<td class="center">307</td>
+
+<td class="center">306</td>
+
+<td class="center">307</td>
+
+<td class="center"></td>
+
+<td class="center">307</td>
+
+<td class="center"><span>10</span></td>
+<td><span>R7</span></td>
+</tr>
+
+<tr id="ImmortalResolve"
+class="legendary"
+data-raw-tier="4"
+data-raw-weapon-type=""
+data-raw-zone="R1">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABVQTFRFJFXKKFXGAAAAUYDrKFjIT37rJlbItR3HRgAAAAN0Uk5TPy0A9Ws8nAAAADpJREFUCNdjUIICBiUlFxjDGcaASykJwkXUYAxVCEMNrkYNxkhNS4IyUsPADLbQ0DCYCExKDd0KMAAAaqgUTglQTnIAAAAASUVORK5CYII=" alt=""></td>
+<td>Legendary</td>
+<td>Immortal Resolve</td>
+<td class="center">20(+11,+10,+11,+11)</td>
+<td class="center">15(+3,+3,+3,+3)</td>
+<td class="center">15(+3,+3,+3,+3)</td>
+<td class="center">50</td>
+
+<td class="center">67</td>
+
+<td class="center">83</td>
+
+<td class="center">100</td>
+
+<td class="center">117</td>
+
+<td class="center">117</td>
+
+<td class="center"><span>4</span></td>
+<td><span>R1</span></td>
+</tr>
+
+<tr id="Kaleido&#39;sRemorse"
+class="legendary"
+data-raw-tier="5"
+data-raw-weapon-type=""
+data-raw-zone="R2">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAAk5KM0MzFhYN93djSNDEubWxmxMK6RkVDXSD6sAAAAAF0Uk5TAEDm2GYAAABPSURBVAjXY2DAAtjS0iCMFBePBijDGcpwL4YwUkshDI6UcmMwIyk4OAIsk1QuwdEBUSIRpAiSSy+XUC8EMcKDO1RLIfpZISJAEBzcgLAaABkRFBJtlYLRAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Kaleido&#39;s Remorse</td>
+<td class="center">19(+22,+12,+15,+15)</td>
+<td class="center">19(+6,+5,+4,+4)</td>
+<td class="center">30(-5,+5,+4,+4)</td>
+<td class="center">68</td>
+
+<td class="center">91</td>
+
+<td class="center">113</td>
+
+<td class="center">136</td>
+
+<td class="center">159</td>
+
+<td class="center">159</td>
+
+<td class="center"><span>5</span></td>
+<td><span>R2</span></td>
+</tr>
+
+<tr id="SkallywagCutlass"
+class="legendary"
+data-raw-tier="6"
+data-raw-weapon-type=""
+data-raw-zone="R3">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAABtQTFRFAAAALTMzWF1i896KsZcx38NSOj1CrLS8cnh9sfw4ZgAAAAF0Uk5TAEDm2GYAAABASURBVAjXY2AAA7ZyCM2QXgFjNOBisLVDGRkdUIEOqKYMqAwTVIBNAyLgJAERYA0qhwgEh7pDVDibejBAGRAaAE0oEIkRYBn4AAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Skallywag Cutlass</td>
+<td class="center">30(+30,+30,+30,+30)</td>
+<td class="center">30(+0,+0,+0,+0)</td>
+<td class="center">30(+0,+0,+0,+0)</td>
+<td class="center">90</td>
+
+<td class="center">120</td>
+
+<td class="center">150</td>
+
+<td class="center">180</td>
+
+<td class="center">210</td>
+
+<td class="center">210</td>
+
+<td class="center"><span>6</span></td>
+<td><span>R3</span></td>
+</tr>
+
+<tr id="Romflect"
+class="legendary"
+data-raw-tier="7"
+data-raw-weapon-type=""
+data-raw-zone="R4">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACdQTFRFAAAA5dnLKysvkYd4cnJ8NDQ5AN7/YbEAT5EAN1UABAQEGBgZKjEACydohQAAAAF0Uk5TAEDm2GYAAABOSURBVAjXY2DAA3jOnDkDZpzo6Og4AGIcP7Vq5endUMbhaFSRZZlHNoAZWZlHIYw0iNTJmTNnHvEGMmyABqqCdAlwK3nvBqlhFAZTcAAAm8Qor/IpRS8AAAAASUVORK5CYII=" alt=""></td>
+<td>Legendary</td>
+<td>Romflect</td>
+<td class="center">40(+50,+20,+20,+20)</td>
+<td class="center">40(-5,+10,+10,+10)</td>
+<td class="center">40(-5,+10,+10,+10)</td>
+<td class="center">120</td>
+
+<td class="center">160</td>
+
+<td class="center">200</td>
+
+<td class="center">240</td>
+
+<td class="center">280</td>
+
+<td class="center">280</td>
+
+<td class="center"><span>7</span></td>
+<td><span>R4</span></td>
+</tr>
+
+<tr id="Mojo"
+class="legendary"
+data-raw-tier="8"
+data-raw-weapon-type=""
+data-raw-zone="R5">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABUFBMVEUAAAA1JRYyIxXNyMHPysNhN5T/9QAeX3gsiq80m8M7p9M7p9LOycLGwbuuq6aopaA1JRY1JRY1JRY1JRY1JRY1JRY1JRY1JRY1JRYyIxVHMh5HMh48JhEyIhIyIxVQOSJPNyGhlorNyMHPysNhVEcuHxAxKCFTS0TLxr/W0cpvZ15eXV58eXidmpTMx8DUzsexrKaCdoPNyMHOycLTzsesqaNWL4ZiN5XNyMHSzcViUX5hNJdrPKPNyMHTzsamopyAe3R4dnA9d4wrb5VQSpdSR5TX08ukoJpwbGVma2guhKUxl787qNI6pc/NyMHRzMTMx8Cuq6Yri7E1m8Q7qNM7p9LOycLFwbquq6aopaDX0sqknZWqpp+uqaLCvre3tK1gXlhWU06RjoiZkZY3ODcxMzJ7eHF4YYzY08vLxr+tqaOSj4t2fHjTzsbSzcb///8XVdXhAAAAWnRSTlMAAAAAAAAAAAAAAAAAAAAADCMBN6UGOq8HATquBl1MOq0Tb37GbzjVovZrM/RrFGD1ag1t9f58D4Lo7stum/329PP8iSoa00M6P8rZv2pAp+tzQlxeNDucdATKI5EWAAAAAWJLR0RvVQhhgQAAAAlwSFlzAAASdAAAEnQB3mYfeAAAAAd0SU1FB+MGHRQ1NgeT5e0AAAABb3JOVAHPoneaAAAApklEQVQoz2NgoAFgZGTELiEgKIRdQlhEFKiNCVNCTFyCgUFIElNCSlqGmUVWDlNCXkFRSVlFFVNCTV1DMypaC0OcWVsnJjYuXhdDXE/fICExKdmQFU3CyNjENCU1Ld3MHE3CwjIjMys7x8raBk3CNtfO3sHRydnFFV0iz83dw9PL28cXTcLPPyCQgS0oOCQU3VVh4RGR7BycXNzo7uXh5eMnGDX0AgDf8Bg1Wx49CwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNi0yOVQyMDo1Mzo1NCswMDowMIcocZ4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDYtMjlUMjA6NTM6NTQrMDA6MDD2dckiAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADc520rkeAAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA3OFTiFGMAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU2MTg0MTYzNNI46TUAAAAOdEVYdFRodW1iOjpTaXplADBCyW8Y7QAAADV0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL3RtcC90aHVtYmxyL2ltZzE1MDc0NTEzMTYwOTU3ODQ3NzaKQJmNAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Mojo</td>
+<td class="center">54(+65,+28,+27,+25)</td>
+<td class="center">53(-6,+13,+13,+14)</td>
+<td class="center">53(-6,+13,+13,+14)</td>
+<td class="center">160</td>
+
+<td class="center">213</td>
+
+<td class="center">267</td>
+
+<td class="center">320</td>
+
+<td class="center">373</td>
+
+<td class="center">373</td>
+
+<td class="center"><span>8</span></td>
+<td><span>R5</span></td>
+</tr>
+
+<tr id="HorizonSeeker"
+class="legendary"
+data-raw-tier="9"
+data-raw-weapon-type=""
+data-raw-zone="R6">
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QALgBMAAjw6daMAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4wYdFDU2B5Pl7QAAAAFvck5UAc+id5oAAASUSURBVEjHrZVNaFxVFMd/5743k46ZTDpt2jjWGrHEWlAUuhAXpV+KqGCLLorowmKLqKsqaHXRqKAoCkUEQa0LoQstqFSwiprEUnDhBypq22CtxkQzmeaj8+a9efO+7nExWm1NrFUP3M3l3P//nv/533OF/xCPDl0KwqOoDlhtbwGPPb7xu1M57r8BHhjqBygh3DlWDdcHzSy46ILCK4UO85Hq6blyruC7BvsRoZhlukph/9GjjcrIUX9cDNcA418/H5yWf84ViIAg263qI6O1Zrn5ZZPuQyE4c+f/Y4KB4bYsgmw92Ug2N6OskKT6nI20bgILrtwNDK3pk+FDo3p2gjV90tYZOr1RnTRGzms1s5VpqjsbQdo13YgOi5FnvH3+SbcilwKvAQ1g+M845iwX3w4cABYpbEsSPTD47tT5nwyffKnY7d744bbJqluR+4C9wB3AC2cCnI2gBFRoK1wSQ0+Wh5CsPr3ll+CqPtkBbAZ6gBrg/1keAHfXYP/vQKXfN5PUMq5x8sPDEyXrWye/WCvRbFoiL3QsNCimq7mEfmAr0AuMAtmcTZa2Ue8CHgKStlOEdDIlu7azNPVtq9hzOD5QPeR19l7fDQL575N77AK5DrgTqAL6WwVzumig7ifrW7HtRdoPI4ks1a9CWqHFVBx8360cn4058UWDJLZIl/lUrL6lRo4B3pmynElwjx9knRMnWoht+zwNbTb5VVjTJSbLLXedIGVpEKeOc9gnv9hgepxP3RqvBon6y/b0lrY4UlqxrMiMFzPjxaxYViSfE08Vz+1Zmr/yrX3VB1t+dr87Y5G2kjVr2STCGMLywhKzv7wwVykWHI5/G7LgWHxvWpGNMqHXi+F2EdlpDIkxIEYwhpwx8rQqu53DU34QhTaysY5x0g5nkR7MEh3WjA9Mt5l2FhpfIbikr7OweGH+4vHjLdS3H3dO2/fMeaz2lBs81cu96bQ0ORGXZmpJqT6dFqPQLigvyvW5o/tCgIO/rbnCGxjqf05EyoGfrnVE8Bc7Qxc04xeTTvnMPx5fWI8sYxIiRhBDNhqHtdVXd/cDl/2jUSG0ezNXOE0lN2tJy4Z8tyHfbWpR3W5yjPwMmL8lODV/RLaOTYTrTkzFJJnSOZ2tSwrSpULZjfWgWB1EMWIQcfEWLDIj300F3pvrq/OP612D/RhDMWrZVVnG/pEf/MrIMZ94Vin+lNI1lmYm01mUJ4Hd81l13gpMW8/tWcYjg+9Olb1GSqZKYYkhcl2CblPrGs9uWvp5MhIX51fhNIJb9/Siyrp8zmxIrU3Gv29tqFWjnno9IYn1I+MyJI5gimaj2yGrk5W52+Pbuho95VzjVmUP4L2xbfKvBLe83AvgIJSTlr1ZU3YEfsZkNeKbLxqZ48qsCG9rxm4Ap0Mcp0PWqtUH0pYShTpRbySHatPJkSt2dvlfP9WYs4KlKO/MTCQra2MxI25AElscV2rAJuAIQPBL+scJhVbVUsvFvfke837OlSeAZ+eTKAD2WkspCq3G0m6aCB4wAvg/vh5y8ZYCtD8VAWyaKtYqeTUu8NlZPf9/x68HnDwHvw6LeQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNi0yOVQyMDo1Mzo1NCswMDowMIcocZ4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDYtMjlUMjA6NTM6NTQrMDA6MDD2dckiAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADQ4h2CHLQAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA0OH/PR6AAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU2MTg0MTYzNNI46TUAAAAOdEVYdFRodW1iOjpTaXplADBCyW8Y7QAAADV0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL3RtcC90aHVtYmxyL2ltZzQ1MTU3NDE2OTg2MjQxMTczNzXb7G5yAAAAAElFTkSuQmCC" alt=""></td>
+<td>Legendary</td>
+<td>Horizon Seeker</td>
+<td class="center">72(+88,+38,+36,+34)</td>
+<td class="center">72(-8,+17,+18,+19)</td>
+<td class="center">72(-8,+17,+18,+19)</td>
+<td class="center">216</td>
+
+<td class="center">288</td>
+
+<td class="center">360</td>
+
+<td class="center">432</td>
+
+<td class="center">504</td>
+
+<td class="center">504</td>
+
+<td class="center"><span>9</span></td>
+<td><span>R6</span></td>
+</tr>
+
+<tr id="Jake"
+class="legendary"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="R7">
+<td><img src="/question.png" alt=""></td>
+<td>Legendary</td>
+<td>Jake</td>
+<td class="center">96(+118,+50,+48,+46)</td>
+<td class="center">96(-11,+23,+24,+25)</td>
+<td class="center">96(-11,+23,+24,+25)</td>
+<td class="center">288</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center"></td>
+
+<td class="center">384</td>
+
+<td class="center"><span>10</span></td>
+<td><span>R7</span></td>
+</tr>
+
+<tr id="PolychromaticBlaster[3]"
+class="ancient"
+data-raw-tier="10"
+data-raw-weapon-type=""
+data-raw-zone="T10">
+<td><img src="/question.png" alt=""></td>
+<td>Ancient</td>
+<td>Polychromatic Blaster[3]</td>
+<td class="center">?</td>
+<td class="center">?</td>
+<td class="center">?</td>
+<td class="center"></td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center">384</td>
+
+<td class="center"><span>10</span></td>
+<td><span>T10</span></td>
+</tr>
+
+</tbody>
+<tfoot>
+<tr>
+<th id="count" title="149">149</th>
+<th id="type" class="asc focus">Type</th>
+<th id="name" class="asc">Name</th>
+<th id="power" class="number"><img src="/power.png" alt="" title="Power"><span class="invisible">Power</span></th>
+<th id="stamina" class="number"><img src="/stamina.png" alt="" title="Stamina"><span class="invisible">Stamina</spna></th>
+<th id="agility" class="number"><img src="/agility.png" alt="" title="Agility"><span class="invisible">Agility</spna></th>
+<th id="baseStats" class="asc number">Base&nbsp;stats</th>
+<th id="upgrade1" class="asc number">Upgrade&nbsp;1</th>
+<th id="upgrade2" class="asc number">Upgrade&nbsp;2</th>
+<th id="upgrade3" class="asc number">Upgrade&nbsp;3</th>
+<th id="upgrade4" class="asc number">Upgrade&nbsp;4</th>
+<th id="maxedStats" class="asc number">Maxed&nbsp;stats</th>
+
+<th id="tier" class="asc number">Tier</th>
+<th id="zone" class="asc">Zone</th>
+</tr>
+</tfoot>
+</table>
+</main>
+<a href="#backToTop" class="btn btn-dark footer-fixed" title="Back to top">⇧</a>
+<footer>
+<div><a href="https://github.com/NerOcrO/bit-heroes/issues/new" class="external">Bug or new feature</a></div> | <div><a href="http://bit-heroes.wikia.com/wiki/offhands" class="external">Data based on the Wiki</a></div>
+</footer>
+<link rel="stylesheet" href="/style.css">
+<script src="/script.js"></script>
+</body>
+</html>
