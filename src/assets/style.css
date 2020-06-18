@@ -1,0 +1,475 @@
+body {
+	background-color: #9fa9b5;
+	font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0
+}
+
+a {
+	color: #fff;
+	text-decoration: none
+}
+
+ul {
+	margin: 0;
+	padding-left: 10px
+}
+
+img {
+	border-style: none;
+	vertical-align: middle
+}
+
+#backToTop {
+	position: absolute;
+	top: 0
+}
+
+main {
+	margin-top: 60px
+}
+
+.equipments,
+header {
+	background-color: #324254
+}
+
+.equipments,
+header ul {
+	align-items: center;
+	border-bottom: 1px solid #dee2e6;
+	color: #fff;
+	font-weight: 700;
+	line-height: 50px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000
+}
+
+.equipments a,
+header li>a {
+	border-right: 1px solid #dee2e6;
+	display: block
+}
+
+.equipments a:hover,
+header li>a:hover {
+	background-color: #3d5168;
+	color: #fff;
+	text-decoration: none
+}
+
+.equipments .active,
+header .active {
+	background-color: #f18829
+}
+
+.equipments .col-md-1,
+header .col-md-2 {
+	padding: 0
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px
+}
+
+.col-md-1,
+.col-md-2 {
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	width: 100%
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030
+}
+
+.equipments {
+	margin-bottom: 1rem
+}
+
+.github {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.form-group {
+	margin-bottom: 1rem
+}
+
+.form-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5px
+}
+
+form .btn {
+	border: 3px solid #000;
+	border-radius: .55rem;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 900;
+	margin-left: 5px;
+	text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000
+}
+
+label {
+	color: #343434;
+	font-weight: 900
+}
+
+.form-control {
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	color: #495057;
+	display: block;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: .375rem .75rem;
+	width: 100%
+}
+
+.submit {
+	background-color: #1eaad0
+}
+
+.reset {
+	background-color: #9bd01e
+}
+
+.table {
+	border-collapse: collapse;
+	color: #fff;
+	margin-bottom: 1rem;
+	text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+	width: 100%
+}
+
+.table td,
+.table th {
+	border: 1px solid #dee2e6;
+	padding: .75rem;
+	vertical-align: middle
+}
+
+th {
+	background-color: #324254;
+	text-align: center
+}
+
+th.asc,
+th.desc {
+	cursor: pointer
+}
+
+th.asc:hover,
+th.desc:hover {
+	background-color: #3d5168
+}
+
+tr {
+	background-color: #282f37
+}
+
+tr:hover {
+	background-color: #313a44
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+	display: none
+}
+
+.center,
+td:nth-child(1),
+td:nth-child(4) {
+	text-align: center
+}
+
+td.right {
+	padding-right: 2rem;
+	text-align: right
+}
+
+.focus {
+	background-color: #f18829;
+	color: #fff
+}
+
+.asc::after {
+	content: '⇧'
+}
+
+.desc::after {
+	content: '⇩'
+}
+
+a.common {
+	color: #7eff7e
+}
+
+a.rare {
+	color: #7e87f4
+}
+
+a.epic {
+	color: #ff817e
+}
+
+a.legendary {
+	color: #ffffb1
+}
+
+a.mythic {
+	color: #8e546a
+}
+
+.common td:nth-child(1) {
+	background-color: #7eff7e
+}
+
+.rare td:nth-child(1) {
+	background-color: #7e87f4
+}
+
+.epic td:nth-child(1) {
+	background-color: #ff817e
+}
+
+.legendary td:nth-child(1) {
+	background-color: #ffffb1
+}
+
+.mythic td:nth-child(1) {
+	background-color: #8e546a
+}
+
+.ancient td:nth-child(1) {
+	background-color: #b65d3e
+}
+
+.weakest {
+	color: #fe0000;
+	font-weight: 900
+}
+
+.highlight,
+.strongest {
+	color: #00fe00;
+	font-weight: 900
+}
+
+footer {
+	display: flex
+}
+
+footer div {
+	margin: 0 10px
+}
+
+.footer-fixed {
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: 1030
+}
+
+.btn {
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: .375rem .75rem;
+	text-align: center;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap
+}
+
+.btn-dark {
+	background-color: #343a40;
+	border-color: #343a40;
+	color: #fff
+}
+
+.btn-dark:hover {
+	background-color: #23272b;
+	border-color: #1d2124;
+	color: #fff
+}
+
+.btn:focus,
+.btn:hover {
+	text-decoration: none
+}
+
+.invisible {
+	display: none
+}
+
+.material {
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-size: 0;
+	height: 20px;
+	margin-left: 5px;
+	position: absolute;
+	width: 20px
+}
+
+.gold {
+	background-image: url(/gold.png)
+}
+
+.mount-guts {
+	background-image: url(/mount-guts.png)
+}
+
+.common-material {
+	background-image: url(/common-material.png)
+}
+
+.rare-material {
+	background-image: url(/rare-material.png)
+}
+
+.epic-material {
+	background-image: url(/epic-material.png)
+}
+
+.bacon {
+	background-image: url(/bacon.png)
+}
+
+.demon-hide {
+	background-image: url(/demon-hide.png)
+}
+
+.demon-juice {
+	background-image: url(/demon-juice.png)
+}
+
+.ectoplasm {
+	background-image: url(/ectoplasm.png)
+}
+
+.ginger-snaps {
+	background-image: url(/ginger-snaps.png)
+}
+
+.hobbit-foot {
+	background-image: url(/hobbit-foot.png)
+}
+
+.jelly-donut {
+	background-image: url(/jelly-donut.png)
+}
+
+.jumbo-syrum {
+	background-image: url(/jumbo-syrum.png)
+}
+
+.mini-syrum {
+	background-image: url(/mini-syrum.png)
+}
+
+.mini-syrum {
+	background-image: url(/mini-syrum.png)
+}
+
+.ninja-powah {
+	background-image: url(/ninja-powah.png)
+}
+
+.robot-sprocket {
+	background-image: url(/robot-sprocket.png)
+}
+
+.wet-brainz {
+	background-image: url(/wet-brainz.png)
+}
+
+.external {
+	background: url(/external-link.png) no-repeat center right;
+	padding-right: 15px
+}
+
+@media only screen and (max-width:768px) {
+	.fixed-top {
+		position: relative
+	}
+	main {
+		margin: 0
+	}
+	.github {
+		display: none
+	}
+	table,
+	tbody,
+	td,
+	th,
+	thead,
+	tr {
+		display: block
+	}
+	.table tfoot,
+	.table thead {
+		display: none
+	}
+	.table td {
+		margin-top: -1px;
+		padding-left: 150px;
+		position: relative
+	}
+	.table td::before {
+		align-items: center;
+		background-color: #324254;
+		bottom: 0;
+		color: #fff;
+		content: attr(data-label);
+		display: flex;
+		font-weight: 700;
+		left: 0;
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		width: 130px
+	}
+	.table tr {
+		margin-bottom: 1rem
+	}
+	.table th+td {
+		padding-left: 10px
+	}
+	footer {
+		display: block
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.col-md-1 {
+		flex: 0 0 8%;
+		max-width: 8%
+	}
+	.col-md-2 {
+		flex: 0 0 16%;
+		max-width: 16%
+	}
+}
