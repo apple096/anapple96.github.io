@@ -205,4 +205,20 @@
   }],
   "tier": "Tier 8",
   "weaponType": "Laser Gun"
+}, 
+
+{
+      "name": "Battle Axe",
+      "type": "Common",
+      "avatar": "",
+      "zone": "T1"
+   }]
+   "skills": [{
+     "name": "Placeholder",
+     "skillPoint": "1",
+     "action": "Damage target",
+     "pourcentage": "94.5-175.5%"
+   }],
+   "tier": "Tier 1",
+   "weaponType": "Axe"
 }]
