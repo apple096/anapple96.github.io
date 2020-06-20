@@ -13,7 +13,7 @@
                "material":"Gold"
             },
             {
-               "count":"Xarzos",
+               "count":"10",
                "material":"Mount guts"
             },
             {
@@ -25,11 +25,11 @@
       "upgrades":[
          [
             {
-               "count":"+25%",
+               "count":"5",
                "material":"Mount guts"
             },
             {
-               "count":"Galco",
+               "count":"50",
                "material":"Common material"
             }
          ]
@@ -37,21 +37,21 @@
       "exchanges":[
          [
             {
-               "count":"10",
+               "count":"4 - 7",
                "material":"Mount guts"
             },
             {
-               "count":"100",
+               "count":"2 - 4",
                "material":"Common material"
             }
          ],
          [
             {
-               "count":"5",
+               "count":"7",
                "material":"Mount guts"
             },
             {
-               "count":"50",
+               "count":"52",
                "material":"Common material"
             }
          ]
@@ -71,7 +71,7 @@
                "material":"Gold"
             },
             {
-               "count":"Xarzos",
+               "count":"10",
                "material":"Mount guts"
             },
             {
@@ -83,11 +83,11 @@
       "upgrades":[
          [
             {
-               "count":"+25%",
+               "count":"5",
                "material":"Mount guts"
             },
             {
-               "count":"Galco",
+               "count":"50",
                "material":"Common material"
             }
          ]
@@ -95,21 +95,21 @@
       "exchanges":[
          [
             {
-               "count":"10",
+               "count":"4 - 7",
                "material":"Mount guts"
             },
             {
-               "count":"100",
+               "count":"2 - 4",
                "material":"Common material"
             }
          ],
          [
             {
-               "count":"5",
+               "count":"7",
                "material":"Mount guts"
             },
             {
-               "count":"50",
+               "count":"52",
                "material":"Common material"
             }
          ]
@@ -129,7 +129,7 @@
                "material":"Gold"
             },
             {
-               "count":"Xarzos",
+               "count":"10",
                "material":"Mount guts"
             },
             {
@@ -141,11 +141,11 @@
       "upgrades":[
          [
             {
-               "count":"+25%",
+               "count":"5",
                "material":"Mount guts"
             },
             {
-               "count":"Galco",
+               "count":"50",
                "material":"Common material"
             }
          ]
@@ -153,21 +153,21 @@
       "exchanges":[
          [
             {
-               "count":"10",
+               "count":"4 - 7",
                "material":"Mount guts"
             },
             {
-               "count":"100",
+               "count":"2 - 4",
                "material":"Common material"
             }
          ],
          [
             {
-               "count":"5",
+               "count":"7",
                "material":"Mount guts"
             },
             {
-               "count":"50",
+               "count":"52",
                "material":"Common material"
             }
          ]
@@ -187,40 +187,6 @@
                "material":"Gold"
             },
             {
-               "count":"Muncher",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Rare material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Mi-sh3ll",
-               "material":"Rare material"
-            }
-         ],
-         [
-            {
-               "count":"+1-8% Damage",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Rare material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"40",
                "material":"Mount guts"
             },
@@ -228,7 +194,9 @@
                "count":"50",
                "material":"Rare material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"20",
@@ -246,6 +214,38 @@
             },
             {
                "count":"50",
+               "material":"Rare material"
+            }
+         ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"18 - 22",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2 - 3",
+               "material":"Rare material"
+            }
+         ],
+         [
+            {
+               "count":"32",
+               "material":"Mount guts"
+            },
+            {
+               "count":"5",
+               "material":"Rare material"
+            }
+         ],
+         [
+            {
+               "count":"52",
+               "material":"Mount guts"
+            },
+            {
+               "count":"39",
                "material":"Rare material"
             }
          ]
@@ -265,40 +265,6 @@
                "material":"Gold"
             },
             {
-               "count":"Muncher",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Rare material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Mi-sh3ll",
-               "material":"Rare material"
-            }
-         ],
-         [
-            {
-               "count":"+1-8% Damage",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Rare material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"40",
                "material":"Mount guts"
             },
@@ -306,7 +272,9 @@
                "count":"50",
                "material":"Rare material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"20",
@@ -324,6 +292,38 @@
             },
             {
                "count":"50",
+               "material":"Rare material"
+            }
+         ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"18 - 22",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2 - 3",
+               "material":"Rare material"
+            }
+         ],
+         [
+            {
+               "count":"32",
+               "material":"Mount guts"
+            },
+            {
+               "count":"5",
+               "material":"Rare material"
+            }
+         ],
+         [
+            {
+               "count":"52",
+               "material":"Mount guts"
+            },
+            {
+               "count":"39",
                "material":"Rare material"
             }
          ]
@@ -343,40 +343,6 @@
                "material":"Gold"
             },
             {
-               "count":"Muncher",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Rare material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Mi-sh3ll",
-               "material":"Rare material"
-            }
-         ],
-         [
-            {
-               "count":"+1-8% Damage",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Rare material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"40",
                "material":"Mount guts"
             },
@@ -384,7 +350,9 @@
                "count":"50",
                "material":"Rare material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"20",
@@ -405,6 +373,38 @@
                "material":"Rare material"
             }
          ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"18 - 22",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2 - 3",
+               "material":"Rare material"
+            }
+         ],
+         [
+            {
+               "count":"32",
+               "material":"Mount guts"
+            },
+            {
+               "count":"5",
+               "material":"Rare material"
+            }
+         ],
+         [
+            {
+               "count":"52",
+               "material":"Mount guts"
+            },
+            {
+               "count":"39",
+               "material":"Rare material"
+            }
+         ]
       ]
    },
    {
@@ -421,50 +421,6 @@
                "material":"Gold"
             },
             {
-               "count":"Ruby",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Xardax",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"+6% SP Skill Damage",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"Damage random enemy for 260 - 780 %",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+3% Team Enrage",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"200",
                "material":"Mount guts"
             },
@@ -472,7 +428,9 @@
                "count":"4",
                "material":"Epic material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"100",
@@ -500,6 +458,48 @@
             },
             {
                "count":"6",
+               "material":"Epic material"
+            }
+         ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"92 - 150",
+               "material":"Mount guts"
+            },
+            {
+               "count":"1",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"159",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"265 - 300",
+               "material":"Mount guts"
+            },
+            {
+               "count":"3",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"397 - 497",
+               "material":"Mount guts"
+            },
+            {
+               "count":"4",
                "material":"Epic material"
             }
          ]
@@ -519,50 +519,6 @@
                "material":"Gold"
             },
             {
-               "count":"Ruby",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Xardax",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"+6% SP Skill Damage",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"Damage random enemy for 260 - 780 %",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+3% Team Enrage",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"200",
                "material":"Mount guts"
             },
@@ -570,7 +526,9 @@
                "count":"4",
                "material":"Epic material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"100",
@@ -598,6 +556,48 @@
             },
             {
                "count":"6",
+               "material":"Epic material"
+            }
+         ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"92 - 150",
+               "material":"Mount guts"
+            },
+            {
+               "count":"1",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"159",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"265 - 300",
+               "material":"Mount guts"
+            },
+            {
+               "count":"3",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"397 - 497",
+               "material":"Mount guts"
+            },
+            {
+               "count":"4",
                "material":"Epic material"
             }
          ]
@@ -617,50 +617,6 @@
                "material":"Gold"
             },
             {
-               "count":"Ruby",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Xardax",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"+6% SP Skill Damage",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"Damage random enemy for 260 - 780 %",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+3% Team Enrage",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"200",
                "material":"Mount guts"
             },
@@ -668,7 +624,9 @@
                "count":"4",
                "material":"Epic material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"100",
@@ -699,6 +657,48 @@
                "material":"Epic material"
             }
          ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"92 - 150",
+               "material":"Mount guts"
+            },
+            {
+               "count":"1",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"159",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"265 - 300",
+               "material":"Mount guts"
+            },
+            {
+               "count":"3",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"397 - 497",
+               "material":"Mount guts"
+            },
+            {
+               "count":"4",
+               "material":"Epic material"
+            }
+         ]
       ]
    },
    {
@@ -715,60 +715,6 @@
                "material":"Gold"
             },
             {
-               "count":"Juptor",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Konger",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"+3% Ricochet Chance",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"Damage target enemy for 486 - 594 % and damage yourself  for 48.6 - 59.4 %",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+1% Team Damage",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"[8]",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Resurrect a fallen teammate for 48 - 72 %",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"1000",
                "material":"Mount guts"
             },
@@ -776,7 +722,9 @@
                "count":"10",
                "material":"Epic material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"500",
@@ -814,6 +762,58 @@
             },
             {
                "count":"20",
+               "material":"Epic material"
+            }
+         ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"450 - 530",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2 - 4",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"850",
+               "material":"Mount guts"
+            },
+            {
+               "count":"4 - 6?",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"1200",
+               "material":"Mount guts"
+            },
+            {
+               "count":"7 - 14?",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"2000 - 2300",
+               "material":"Mount guts"
+            },
+            {
+               "count":"16 - 30",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"3000",
+               "material":"Mount guts"
+            },
+            {
+               "count":"30 - 50?",
                "material":"Epic material"
             }
          ]
@@ -833,60 +833,6 @@
                "material":"Gold"
             },
             {
-               "count":"Juptor",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Konger",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"+3% Ricochet Chance",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"Damage target enemy for 486 - 594 % and damage yourself  for 48.6 - 59.4 %",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+1% Team Damage",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"[8]",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Resurrect a fallen teammate for 48 - 72 %",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"1000",
                "material":"Mount guts"
             },
@@ -894,7 +840,9 @@
                "count":"10",
                "material":"Epic material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"500",
@@ -932,6 +880,58 @@
             },
             {
                "count":"20",
+               "material":"Epic material"
+            }
+         ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"450 - 530",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2 - 4",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"850",
+               "material":"Mount guts"
+            },
+            {
+               "count":"4 - 6?",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"1200",
+               "material":"Mount guts"
+            },
+            {
+               "count":"7 - 14?",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"2000 - 2300",
+               "material":"Mount guts"
+            },
+            {
+               "count":"16 - 30",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"3000",
+               "material":"Mount guts"
+            },
+            {
+               "count":"30 - 50?",
                "material":"Epic material"
             }
          ]
@@ -951,60 +951,6 @@
                "material":"Gold"
             },
             {
-               "count":"Juptor",
-               "material":"Mount guts"
-            },
-            {
-               "count":"",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "upgrades":[
-         [
-            {
-               "count":"+25%",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Konger",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"+3% Ricochet Chance",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+25%",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"Damage target enemy for 486 - 594 % and damage yourself  for 48.6 - 59.4 %",
-               "material":"Mount guts"
-            },
-            {
-               "count":"+1% Team Damage",
-               "material":"Epic material"
-            }
-         ],
-         [
-            {
-               "count":"[8]",
-               "material":"Mount guts"
-            },
-            {
-               "count":"Resurrect a fallen teammate for 48 - 72 %",
-               "material":"Epic material"
-            }
-         ]
-      ],
-      "exchanges":[
-         [
-            {
                "count":"1000",
                "material":"Mount guts"
             },
@@ -1012,7 +958,9 @@
                "count":"10",
                "material":"Epic material"
             }
-         ],
+         ]
+      ],
+      "upgrades":[
          [
             {
                "count":"500",
@@ -1050,6 +998,58 @@
             },
             {
                "count":"20",
+               "material":"Epic material"
+            }
+         ]
+      ],
+      "exchanges":[
+         [
+            {
+               "count":"450 - 530",
+               "material":"Mount guts"
+            },
+            {
+               "count":"2 - 4",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"850",
+               "material":"Mount guts"
+            },
+            {
+               "count":"4 - 6?",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"1200",
+               "material":"Mount guts"
+            },
+            {
+               "count":"7 - 14?",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"2000 - 2300",
+               "material":"Mount guts"
+            },
+            {
+               "count":"16 - 30",
+               "material":"Epic material"
+            }
+         ],
+         [
+            {
+               "count":"3000",
+               "material":"Mount guts"
+            },
+            {
+               "count":"30 - 50?",
                "material":"Epic material"
             }
          ]
