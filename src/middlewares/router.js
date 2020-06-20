@@ -137,6 +137,9 @@ const setEquipAbilitySelect = (data, index) => data.reduce((accumulator, name) =
           if (data[i].passiveAbility[j].ability != undefined) {
             accumulator.push(data[i].passiveAbility[j].ability)
           }
+          if (data[i].passiveAbility[j].abilityTag != undefined) {
+            accumulator.push(data[i].passiveAbility[j].abilityTag)
+          }
         }
       }
     }
@@ -183,6 +186,7 @@ const displayEquipments = async (request, response) => {
     data = data.map((item) => {
       if (item.passiveAbility != undefined) {
         item.rawPassiveAbilities = item.passiveAbility.map(passiveAbility => passiveAbility.ability)
+        item.rawPassiveAbilities += item.passiveAbility.map(passiveAbility => passiveAbility.abilityTag)
       }
       if (page === 'mainhands') {
         if (item.skills != undefined) {
