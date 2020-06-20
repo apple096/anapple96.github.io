@@ -4,7 +4,7 @@
 ![npm version](https://img.shields.io/badge/npm-&#10878;3.8.6-green.svg)
 ![ISC license](https://img.shields.io/badge/licence-MIT-blue.svg)
 
-**A clone of : https://github.com/NerOcrO/bit-heroes , maintained by anapple96**
+**A clone of : https://github.com/NerOcrO/bit-heroes , maintained by anapple96.**
 
 ## Make data
 
