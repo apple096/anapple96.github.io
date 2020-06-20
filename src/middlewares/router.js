@@ -122,19 +122,54 @@ const displayFamiliars = async (request, response, page) => {
   }
 }
 
+const distinct = (value, index, self) => {
+    return self.indexOf(value) === index;
+}
+
+const setEquipSelect = (data, index) => data.reduce((accumulator, name) => {
+  let text = ''
+
+  if (index === 'passiveAbility') {
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].passiveAbility != undefined) {
+        for (let j = 0; j < data[i].passiveAbility.length; j++) {
+          if (data[i].passiveAbility[j].ability != undefined) {
+            accumulator.push(data[i].passiveAbility[j].ability)
+          }
+        }
+      }
+    }
+  }
+
+  //console.log(accumulator.filter(distinct));
+  return accumulator.filter(distinct);
+}, [])
+
 const displayEquipments = async (request, response) => {
   const page = request.params.equipment
   const rawData = await fs.promises.readFile(`data/${page}.json`, 'utf8')
 
   try {
-    const data = JSON.parse(rawData)
+    let data = JSON.parse(rawData)
+    //const readable = JSON.stringify(data, null , 4)
+    //console.log(data[0])
 
     response.locals.selectType = setSimpleSelect(data, 'type')
     if (page === 'mainhands') {
       response.locals.selectWeaponType = setSimpleSelect(data, 'weaponType')
     }
-    response.locals.selectTier = setSimpleSelect(data, 'tier')
     response.locals.selectZone = setSimpleSelect(data, 'zone')
+    response.locals.selectTier = setSimpleSelect(data, 'tier')
+    response.locals.selectPassiveAbility = setEquipSelect(data, 'passiveAbility').sort()
+
+    data = data.map((item) => {
+      if (page === 'mainhands') {
+          if (item.passiveAbility != undefined) {
+            item.rawPassiveAbilities = item.passiveAbility.map(passiveAbility => passiveAbility.ability)
+          }
+        }
+        return item
+      })
 
     response.render('layout', {
       view: 'equipments',
