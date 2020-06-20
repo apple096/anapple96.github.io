@@ -64,6 +64,7 @@ const setComplexSelect = (data, index) => data.reduce((accumulator, familiar) =>
   return accumulator
 }, [])
 
+
 const displayFamiliars = async (request, response, page) => {
   const rawData = await fs.promises.readFile(`data/${page}.json`, 'utf8')
 
@@ -126,7 +127,7 @@ const distinct = (value, index, self) => {
     return self.indexOf(value) === index;
 }
 
-const setEquipSelect = (data, index) => data.reduce((accumulator, name) => {
+const setEquipAbilitySelect = (data, index) => data.reduce((accumulator, name) => {
   let text = ''
 
   if (index === 'passiveAbility') {
@@ -145,31 +146,51 @@ const setEquipSelect = (data, index) => data.reduce((accumulator, name) => {
   return accumulator.filter(distinct);
 }, [])
 
+  const setEquipSkillSelect = (data, index) => data.reduce((accumulator, name) => {
+    let text = ''
+
+    if (index === 'skills') {
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].skills != undefined) {
+          for (let j = 0; j < data[i].skills.length; j++) {
+            if (data[i].skills[j].action != undefined) {
+              accumulator.push(data[i].skills[j].action)
+            }
+          }
+        }
+      }
+    }
+
+    //console.log(accumulator.filter(distinct));
+    return accumulator.filter(distinct);
+  }, [])
+
 const displayEquipments = async (request, response) => {
   const page = request.params.equipment
   const rawData = await fs.promises.readFile(`data/${page}.json`, 'utf8')
 
   try {
     let data = JSON.parse(rawData)
-    //const readable = JSON.stringify(data, null , 4)
-    //console.log(data[0])
 
     response.locals.selectType = setSimpleSelect(data, 'type')
     if (page === 'mainhands') {
+      response.locals.selectSkill = setEquipSkillSelect(data, 'skills').sort()
       response.locals.selectWeaponType = setSimpleSelect(data, 'weaponType')
     }
     response.locals.selectZone = setSimpleSelect(data, 'zone')
-    response.locals.selectTier = setSimpleSelect(data, 'tier')
-    response.locals.selectPassiveAbility = setEquipSelect(data, 'passiveAbility').sort()
+    response.locals.selectPassiveAbility = setEquipAbilitySelect(data, 'passiveAbility').sort()
 
     data = data.map((item) => {
+      if (item.passiveAbility != undefined) {
+        item.rawPassiveAbilities = item.passiveAbility.map(passiveAbility => passiveAbility.ability)
+      }
       if (page === 'mainhands') {
-          if (item.passiveAbility != undefined) {
-            item.rawPassiveAbilities = item.passiveAbility.map(passiveAbility => passiveAbility.ability)
-          }
+        if (item.skills != undefined) {
+        item.rawSkills = item.skills.map(skill => `${skill.skillPoint}|${skill.action}`)
         }
-        return item
-      })
+      }
+      return item
+    })
 
     response.render('layout', {
       view: 'equipments',

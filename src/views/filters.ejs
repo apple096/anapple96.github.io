@@ -1,6 +1,6 @@
 <form class="form-row">
   <div class="form-group col-md-1">
-    <label for="selectType">Type</label>
+    <label for="selectType">Rarity</label>
     <select id="selectType" name="selectType" class="form-control">
       <option value="all">--All--</option>
       <% for (let i = 0; i < locals.selectType.length; i++) { %>
@@ -8,55 +8,7 @@
       <% } %>
     </select>
   </div>
-  <% if (locals.selectSkill) { %>
-  and
-  <div class="form-group col-md-2">
-    <label for="selectSkill">Skill</label>
-    <select id="selectSkill" name="selectSkill" class="form-control">
-      <option value="all">--All--</option>
-      <% for (let i = 0; i < locals.selectSkill.length; i++) { %>
-      <option value="<%= locals.selectSkill[i] %>"><%= locals.selectSkill[i] %></option>
-      <% } %>
-    </select>
-  </div>
-  and
-  <div class="form-group col-md-1">
-    <label for="selectSkillPoint">Skill point</label>
-    <select id="selectSkillPoint" name="selectSkillPoint" class="form-control">
-      <option value="all">--All--</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-  </div>
-  <% } %>
-  <% if (locals.selectPassiveAbility) { %>
-  and
-  <div class="form-group col-md-2">
-    <label for="selectPassiveAbility">Passive ability</label>
-    <select id="selectPassiveAbility" name="selectPassiveAbility" class="form-control">
-      <option value="all">--All--</option>
-      <% for (let i = 0; i < locals.selectPassiveAbility.length; i++) { %>
-      <option value="<%= locals.selectPassiveAbility[i] %>"><%= locals.selectPassiveAbility[i] %></option>
-      <% } %>
-    </select>
-  </div>
-  <% } %>
-  <% if (locals.selectSchematicPlace) { %>
-  and
-  <div class="form-group col-md-2">
-    <label for="selectSchematicPlace">Schematic Place</label>
-    <select id="selectSchematicPlace" name="selectSchematicPlace" class="form-control">
-      <option value="all">--All--</option>
-      <% for (let i = 0; i < locals.selectSchematicPlace.length; i++) { %>
-      <option value="<%= locals.selectSchematicPlace[i] %>"><%= locals.selectSchematicPlace[i] %></option>
-      <% } %>
-    </select>
-  </div>
-  <% } %>
   <% if (locals.selectWeaponType) { %>
-  and
   <div class="form-group col-md-2">
     <label for="selectWeaponType">Weapon Type</label>
     <select id="selectWeaponType" name="selectWeaponType" class="form-control">
@@ -67,8 +19,51 @@
     </select>
   </div>
   <% } %>
+  <% if (locals.selectPassiveAbility) { %>
+  <div class="form-group col-md-2">
+    <label for="selectPassiveAbility">Passive ability</label>
+    <select id="selectPassiveAbility" name="selectPassiveAbility" class="form-control">
+      <option value="all">--All--</option>
+      <% for (let i = 0; i < locals.selectPassiveAbility.length; i++) { %>
+      <option value="<%= locals.selectPassiveAbility[i] %>"><%= locals.selectPassiveAbility[i] %></option>
+      <% } %>
+    </select>
+  </div>
+  <% } %>
+  <% if (locals.selectSkill) { %>
+    <div class="form-group col-md-1">
+      <label for="selectSkillPoint">Skill point</label>
+      <select id="selectSkillPoint" name="selectSkillPoint" class="form-control">
+        <option value="all">--All--</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+  <div class="form-group col-md-2">
+    <label for="selectSkill">Skill</label>
+    <select id="selectSkill" name="selectSkill" class="form-control">
+      <option value="all">--All--</option>
+      <% for (let i = 0; i < locals.selectSkill.length; i++) { %>
+      <option value="<%= locals.selectSkill[i] %>"><%= locals.selectSkill[i] %></option>
+      <% } %>
+    </select>
+  </div>
+  <% } %>
+  <% if (locals.selectSchematicPlace) { %>
+  <div class="form-group col-md-2">
+    <label for="selectSchematicPlace">Schematic Place</label>
+    <select id="selectSchematicPlace" name="selectSchematicPlace" class="form-control">
+      <option value="all">--All--</option>
+      <% for (let i = 0; i < locals.selectSchematicPlace.length; i++) { %>
+      <option value="<%= locals.selectSchematicPlace[i] %>"><%= locals.selectSchematicPlace[i] %></option>
+      <% } %>
+    </select>
+  </div>
+  <% } %>
   <% if (locals.selectTier) { %>
-  and
   <div class="form-group col-md-2">
     <label for="selectTier">Tier</label>
     <select id="selectTier" name="selectTier" class="form-control">
@@ -80,7 +75,6 @@
   </div>
   <% } %>
   <% if (locals.selectZone) { %>
-  and
   <div class="form-group col-md-2">
     <label for="selectZone">Zone</label>
     <select id="selectZone" name="selectZone" class="form-control">
@@ -92,7 +86,6 @@
   </div>
   <% } %>
   <% if (locals.selectFusion) { %>
-  or
   <div class="form-group col-md-1">
     <label for="selectFusion">Fusion</label>
     <select id="selectFusion" name="selectFusion" class="form-control">
