@@ -27,7 +27,7 @@
     "csurf": "^1.10.0",
     "debug": "^4.1.1",
     "ejs": "^2.6.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.16.2",
     "helmet": "^3.23.0",
     "node-fetch": "^2.6.0"
